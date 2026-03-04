@@ -15,7 +15,7 @@ const AboutSection = () => {
         {/* Image Section - Bigger and Square */}
         <div className="w-64 h-64 md:w-80 md:h-80 overflow-hidden">
           <img
-            src="/IMG_2834.JPG"
+            src={`${import.meta.env.BASE_URL}IMG_2834.JPG`}
             alt="Miaomiao Zhang"
             className="w-full h-full object-cover"
           />
