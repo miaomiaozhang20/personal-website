@@ -8,7 +8,20 @@ const MiscellaneousSection = () => {
     },
     {
       year: "G2",
-      commitment: "Designed/taught undergrad AI & Innovation course + 200hr Yoga Teacher Training",
+      commitment: (
+        <span>
+          Designed/taught undergrad{" "}
+          <a
+            href="https://subsequent-germanium-5af.notion.site/EC970-Economics-of-Innovation-with-Generative-AI-b8e6e85d47d04883991e16993feee735?source=copy_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-secondary hover:underline"
+          >
+            AI & Innovation course
+          </a>
+          {" "}+ 200hr Yoga Teacher Training
+        </span>
+      ),
     },
     {
       year: "G3",
@@ -22,15 +35,6 @@ const MiscellaneousSection = () => {
       year: "G5",
       commitment: "First marathon (to-be-realized)",
     },
-  ];
-
-  const appreciations = [
-    { name: "'Leke" },
-    { name: "Joey" },
-    { name: "Paul" },
-    { name: "Jackie" },
-    { name: "Faye" },
-    { name: "Scott" },
   ];
 
   return (
@@ -47,7 +51,7 @@ const MiscellaneousSection = () => {
           Life Portfolio Diversification
         </h2>
         <p className="text-text-light leading-relaxed italic">
-          I commit to one thing per year orthogonal to my professional passion
+          I commit to something "random" per year orthogonal to my professional passion.
         </p>
         <div className="space-y-4">
           {yearlyCommitments.map((item, index) => (
@@ -56,26 +60,6 @@ const MiscellaneousSection = () => {
                 <span className="font-semibold text-primary text-sm">{item.year}</span>
                 <p className="text-text-light">{item.commitment}</p>
               </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Divider */}
-      <div className="border-t border-primary/20"></div>
-
-      {/* Appreciations Section */}
-      <div className="space-y-4">
-        <h2 className="font-display text-2xl font-semibold text-foreground">
-          Things I Appreciate About My Significant Others
-        </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          {appreciations.map((person, index) => (
-            <div
-              key={index}
-              className="border border-primary/20 rounded-sm p-4 text-center hover:border-primary/40 transition-colors"
-            >
-              <p className="text-foreground font-medium">{person.name}</p>
             </div>
           ))}
         </div>
