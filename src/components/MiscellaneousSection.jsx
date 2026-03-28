@@ -10,7 +10,7 @@ const MiscellaneousSection = () => {
       year: "G2",
       commitment: (
         <span>
-          Designed/taught undergrad{" "}
+          Designed and taught undergrad{" "}
           <a
             href="https://subsequent-germanium-5af.notion.site/EC970-Economics-of-Innovation-with-Generative-AI-b8e6e85d47d04883991e16993feee735?source=copy_link"
             target="_blank"
@@ -19,7 +19,6 @@ const MiscellaneousSection = () => {
           >
             AI & Innovation course
           </a>
-          {" "}+ 200hr Yoga Teacher Training
         </span>
       ),
     },
