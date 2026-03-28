@@ -142,7 +142,7 @@ const AboutSection = () => {
                   HBS Shad
                 </a>
               </h3>
-              <p className="text-sm text-text-light">Part of the instructor team</p>
+              <p className="text-sm text-text-light">Yoga instructor</p>
             </div>
           </div>
         </div>
