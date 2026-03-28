@@ -64,6 +64,49 @@ const AboutSection = () => {
           </p>
         </div>
       </div>
+
+      {/* Affiliations Section */}
+      <div className="mt-8 space-y-4">
+        <h2 className="font-display text-2xl font-semibold text-foreground">
+          Affiliations
+        </h2>
+        <ul className="space-y-3">
+          <li className="text-lg text-text-light">
+            Co-leading the{" "}
+            <a
+              href="https://coast-to-coast.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-secondary hover:underline"
+            >
+              Coast to Coast Doctoral Workshop
+            </a>
+          </li>
+          <li className="text-lg text-text-light">
+            Co-leading the{" "}
+            <a
+              href="https://www.innovationgrowthlab.org/about/research-network/phd-community"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-secondary hover:underline"
+            >
+              "Behind the Scenes" series
+            </a>
+            {" "}of Innovation Growth Lab
+          </li>
+          <li className="text-lg text-text-light">
+            Instructor team at{" "}
+            <a
+              href="https://www.instagram.com/p/DO6tNaEEcy4/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-secondary hover:underline"
+            >
+              HBS Shad
+            </a>
+          </li>
+        </ul>
+      </div>
     </motion.div>
   );
 };
