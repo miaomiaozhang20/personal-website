@@ -92,7 +92,7 @@ const AboutSection = () => {
                   Coast-to-Coast Doctoral Workshop
                 </a>
               </h3>
-              <p className="text-sm text-text-light">Co-leading this doctoral workshop</p>
+              <p className="text-sm text-text-light">Co-leading the junior scholars community</p>
             </div>
           </div>
 
@@ -117,7 +117,7 @@ const AboutSection = () => {
                   Innovation Growth Lab
                 </a>
               </h3>
-              <p className="text-sm text-text-light">Co-leading the "Behind the Scenes" series</p>
+              <p className="text-sm text-text-light">Co-leading the "Behind the Scenes" of field experimental research series</p>
             </div>
           </div>
 
