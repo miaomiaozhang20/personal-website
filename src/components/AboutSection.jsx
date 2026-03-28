@@ -54,7 +54,7 @@ const AboutSection = () => {
           <p className="flex items-center text-lg text-foreground font-medium">
             <FileText className="w-5 h-5 mr-2 text-text-light" />
             <a
-              href="https://www.dropbox.com/scl/fi/xk278tkbo8efrvj8cobbd/Miaomiao_Zhang_CV.pdf?rlkey=4ewzaq49mecl06gz36yn3pdp1&st=sh0tsjz4&dl=0"
+              href="https://www.dropbox.com/scl/fi/91yeba85gdub0zpmrn5bi/Miaomiao_Zhang_CV_032826.docx?rlkey=7umwss6tr0syl5q2fleai85rq&st=mdae1go0&dl=0"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"
