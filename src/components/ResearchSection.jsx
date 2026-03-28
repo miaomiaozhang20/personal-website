@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/accordion";
 
 const ResearchSection = () => {
-  const papers = [
+  const currentPapers = [
     {
       title: "The Crowdless Future? Generative AI and Creative Problem Solving",
       authors: "Léonard Boussioux, Jacqueline N. Lane, Miaomiao Zhang, Vladimir Jacimovic, and Karim R. Lakhani",
@@ -66,16 +66,25 @@ const ResearchSection = () => {
       status: "Accepted",
     },
     {
-      title: "Regulatory Uncertainty, Entrepreneurial Entry, and Market Identity Specificity: Evidence from the U.S. Autonomous Vehicle Industry",
-      authors: "Jiayi Bao, and Miaomiao Zhang",
-      description: "In preparation to submit",
-      status: "Work in Progress",
-    },
-    {
       title: "Temporal Distance and Global Knowledge Diffusion on Online Platform",
       authors: "Wesley W. Koo, Miaomiao Zhang, and Prithwiraj (Raj) Choudhury",
       description: "Revise & Resubmit at Strategic Management Journal",
       status: "Working Paper",
+    },
+    {
+      title: "Forecasting Impact of Ideas: The Role of Concrete Language in Idea Evaluation",
+      authors: "Orwig, William, Jacqueline N. Lane, Miaomiao Zhang, and Daniel L. Schacter",
+      description: "Revise & Resubmit",
+      status: "Working Paper",
+    },
+  ];
+
+  const prePhdPapers = [
+    {
+      title: "Regulatory Uncertainty, Entrepreneurial Entry, and Market Identity Specificity: Evidence from the U.S. Autonomous Vehicle Industry",
+      authors: "Jiayi Bao, and Miaomiao Zhang",
+      description: "In preparation to submit",
+      status: "Work in Progress",
     },
     {
       title: "Organizational-Performance Pay and Compensation Dispersion",
@@ -112,8 +121,35 @@ const ResearchSection = () => {
       </p>
 
       <Accordion type="single" collapsible className="w-full">
-        {papers.map((paper, index) => (
+        {currentPapers.map((paper, index) => (
           <AccordionItem key={index} value={`item-${index}`}>
+            <AccordionTrigger className="text-left hover:no-underline">
+              <div className="flex flex-col items-start">
+                <span className="font-medium text-foreground">{paper.title}</span>
+                <span className="text-sm text-text-light">{paper.status}</span>
+              </div>
+            </AccordionTrigger>
+            <AccordionContent>
+              <div className="space-y-3 pt-2">
+                <p className="text-sm font-medium text-text-light">{paper.authors}</p>
+                {paper.venue && <div className="text-sm text-text-light">{paper.venue}</div>}
+                {paper.abstract && <p className="text-text-light leading-relaxed">{paper.abstract}</p>}
+                {paper.description && !paper.abstract && <p className="text-text-light">{paper.description}</p>}
+              </div>
+            </AccordionContent>
+          </AccordionItem>
+        ))}
+      </Accordion>
+
+      <div className="mt-8 mb-4">
+        <h3 className="font-display text-xl font-semibold text-foreground border-b border-border pb-2">
+          Pre-PhD Works
+        </h3>
+      </div>
+
+      <Accordion type="single" collapsible className="w-full">
+        {prePhdPapers.map((paper, index) => (
+          <AccordionItem key={`pre-phd-${index}`} value={`pre-phd-item-${index}`}>
             <AccordionTrigger className="text-left hover:no-underline">
               <div className="flex flex-col items-start">
                 <span className="font-medium text-foreground">{paper.title}</span>
