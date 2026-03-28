@@ -25,11 +25,32 @@ const MiscellaneousSection = () => {
     },
     {
       year: "G3",
-      commitment: "Taught yoga at Mather House as a non-resident tutor",
+      commitment: "Teaching yoga at Mather House as a non-resident tutor, later the Shad Gym at HBS",
     },
     {
       year: "G4",
-      commitment: "Teaching yoga at HBS Shad + meditation practice with a monk at HDS Multifaith Space (volunteer)",
+      commitment: (
+        <span>
+          Meditation practice with{" "}
+          <a
+            href="https://www.amffxianshu.org/?page_id=13271"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-secondary hover:underline"
+          >
+            Master Xianshu
+          </a>
+          {" "}at the{" "}
+          <a
+            href="https://www.amffcambridge.org/about-us"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-secondary hover:underline"
+          >
+            Art of the Mindfulness Foundation
+          </a>
+        </span>
+      ),
     },
     {
       year: "G5",
