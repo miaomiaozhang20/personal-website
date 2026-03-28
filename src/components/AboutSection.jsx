@@ -28,7 +28,7 @@ const AboutSection = () => {
             淼淼 "Mee-ow Mee-ow" (she/her/hers)
           </p>
           <p className="text-lg text-text-light">
-            Hello! I am a PhD candidate at Harvard Business School, where I am fortunate to be advised by Jacqueline (Jackie) Lane. I am also affiliated with the{" "}
+            Hello! I am a PhD candidate at Harvard Business School, where I am fortunate to be advised by Jacqueline (Jackie) Lane, Scott Stern (MIT), and Raffaella Sadun. I am also affiliated with the{" "}
             <a
               href="https://d3.harvard.edu/lish/"
               target="_blank"
