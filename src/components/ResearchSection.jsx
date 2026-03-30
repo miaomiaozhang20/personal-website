@@ -135,7 +135,7 @@ const ResearchSection = () => {
       </Accordion>
 
       <div className="mt-8 mb-4">
-        <h3 className="font-display text-xl font-semibold text-foreground border-b border-border pb-2">
+        <h3 className="font-display text-xl font-semibold text-foreground">
           Pre-PhD Works
         </h3>
       </div>
