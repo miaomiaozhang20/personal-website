@@ -79,7 +79,7 @@ const ResearchSection = () => {
       abstract: "Add your abstract here",
       status: "Conditional Accept",
       slides: "https://www.dropbox.com/scl/fi/sajoe9kzuidqbizl85k6l/MiaomiaoZhang_UnwindClock.pdf?rlkey=kl2ktxz0fwcw9m0y9p8mozq61&st=7uxv3yxr&dl=0",
-      // slidePreview: `${import.meta.env.BASE_URL}temporal-distance-preview.png`, // Add preview image to public folder first
+      slidePreview: `${import.meta.env.BASE_URL}temporal-distance-preview.png`,
     },
     {
       title: "Forecasting Impact of Ideas: The Role of Concrete Language in Idea Evaluation",
