@@ -1,15 +1,8 @@
-import { motion } from "framer-motion";
 import { Mail, FileText } from "lucide-react";
 
 const AboutSection = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, x: 20 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -20 }}
-      transition={{ duration: 0.2 }}
-      className="space-y-6"
-    >
+    <div className="space-y-6">
       {/* Profile Section */}
       <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8">
         {/* Image Section - Bigger and Square */}
@@ -147,7 +140,7 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 const MiscellaneousSection = () => {
   const yearlyCommitments = [
     {
@@ -58,13 +56,7 @@ const MiscellaneousSection = () => {
   ];
 
   return (
-    <motion.div
-      initial={{ opacity: 0, x: 20 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -20 }}
-      transition={{ duration: 0.2 }}
-      className="space-y-12"
-    >
+    <div className="space-y-12">
       {/* Yearly Commitments Section */}
       <div className="space-y-4">
         <h2 className="font-display text-2xl font-semibold text-foreground">
@@ -106,7 +98,7 @@ const MiscellaneousSection = () => {
         </h2>
         <p className="text-text-light italic">More details coming soon</p>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

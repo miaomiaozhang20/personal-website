@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import {
   Accordion,
   AccordionContent,
@@ -108,13 +107,7 @@ const ResearchSection = () => {
   ];
 
   return (
-    <motion.div
-      initial={{ opacity: 0, x: 20 }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: -20 }}
-      transition={{ duration: 0.2 }}
-      className="space-y-6"
-    >
+    <div className="space-y-6">
       <h2 className="font-display text-2xl font-semibold text-foreground">Research</h2>
       <p className="text-lg text-text-light leading-relaxed">
         My ongoing projects involve working with platforms and innovation institutes to examine customer-problem fit in early-stage entrepreneurial ventures. More specifically, I am investigating how startups can better sample from their potential customer base to improve the scalability and market success of their downstream products and solutions. In the past, I have studied incentive design, AI-augmented problem solving, and knowledge diffusion under open innovation and platform contexts.
@@ -167,7 +160,7 @@ const ResearchSection = () => {
           </AccordionItem>
         ))}
       </Accordion>
-    </motion.div>
+    </div>
   );
 };
 
