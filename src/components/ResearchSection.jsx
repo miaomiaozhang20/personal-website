@@ -71,8 +71,15 @@ const ResearchSection = () => {
     {
       title: "Temporal Distance and Global Knowledge Diffusion on Online Platform",
       authors: "Wesley W. Koo, Miaomiao Zhang, and Prithwiraj (Raj) Choudhury",
-      description: "Revise & Resubmit at Strategic Management Journal",
-      status: "Working Paper",
+      venue: (
+        <span>
+          Conditional Accept at Strategic Management Journal
+        </span>
+      ),
+      abstract: "Add your abstract here",
+      status: "Conditional Accept",
+      slides: "https://www.dropbox.com/scl/fi/sajoe9kzuidqbizl85k6l/MiaomiaoZhang_UnwindClock.pdf?rlkey=kl2ktxz0fwcw9m0y9p8mozq61&st=7uxv3yxr&dl=0",
+      // slidePreview: `${import.meta.env.BASE_URL}temporal-distance-preview.png`, // Add preview image to public folder first
     },
     {
       title: "Forecasting Impact of Ideas: The Role of Concrete Language in Idea Evaluation",
@@ -135,11 +142,20 @@ const ResearchSection = () => {
                   rel="noopener noreferrer"
                   className="block border border-border rounded-lg overflow-hidden hover:border-secondary transition-all hover:shadow-lg group"
                 >
-                  <img
-                    src={paper.slidePreview}
-                    alt={`${paper.title} Preview`}
-                    className="w-full h-auto object-cover"
-                  />
+                  {paper.slidePreview ? (
+                    <img
+                      src={paper.slidePreview}
+                      alt={`${paper.title} Preview`}
+                      className="w-full h-auto object-cover"
+                    />
+                  ) : (
+                    <div className="aspect-video bg-gray-100 flex items-center justify-center">
+                      <div className="text-center space-y-2 p-6">
+                        <div className="text-5xl">📊</div>
+                        <p className="text-lg font-semibold text-foreground">Presentation Slides</p>
+                      </div>
+                    </div>
+                  )}
                   <div className="bg-gray-50 border-t border-border p-3 text-center group-hover:bg-gray-100 transition-colors">
                     <p className="text-sm text-secondary font-medium">
                       Click to view full presentation →
