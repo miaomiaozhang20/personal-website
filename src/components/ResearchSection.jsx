@@ -116,50 +116,72 @@ const ResearchSection = () => {
         My ongoing projects involve working with platforms and innovation institutes to examine customer-problem fit in early-stage entrepreneurial ventures. More specifically, I am investigating how startups can better sample from their potential customer base to improve the scalability and market success of their downstream products and solutions. In the past, I have studied incentive design, AI-augmented problem solving, and knowledge diffusion under open innovation and platform contexts.
       </p>
 
-      <Accordion type="single" collapsible className="w-full">
+      <div className="space-y-8">
         {currentPapers.map((paper, index) => (
-          <AccordionItem key={index} value={`item-${index}`}>
-            <AccordionTrigger className="text-left hover:no-underline">
-              <div className="flex flex-col items-start">
-                <span className="font-medium text-foreground">{paper.title}</span>
-                <span className="text-sm text-text-light">{paper.status}</span>
+          paper.slides ? (
+            // Papers with slides: displayed as visible cards with two-column layout
+            <div key={index} className="border border-border rounded-lg p-6 space-y-4">
+              <div className="space-y-2">
+                <h3 className="text-xl font-semibold text-foreground">{paper.title}</h3>
+                <p className="text-sm text-text-light">{paper.status}</p>
               </div>
-            </AccordionTrigger>
-            <AccordionContent>
-              {paper.slides ? (
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
-                  {/* Left column: Slides preview */}
-                  <div className="border border-border rounded-lg overflow-hidden">
-                    <iframe
-                      src={paper.slides}
-                      className="w-full h-96"
-                      title={`${paper.title} Slides`}
-                    />
-                  </div>
 
-                  {/* Right column: Paper details */}
-                  <div className="space-y-3">
-                    <p className="text-sm font-medium text-text-light">{paper.authors}</p>
-                    {paper.venue && <div className="text-sm text-text-light">{paper.venue}</div>}
-                    {paper.abstract && (
-                      <div className="space-y-2">
-                        <p className="font-semibold text-foreground text-sm">Abstract:</p>
-                        <p className="text-text-light leading-relaxed text-sm">{paper.abstract}</p>
-                      </div>
-                    )}
-                    {paper.description && !paper.abstract && <p className="text-text-light">{paper.description}</p>}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Left column: Slides preview */}
+                <a
+                  href={paper.slides.replace('?raw=1', '?dl=0')}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block border border-border rounded-lg overflow-hidden hover:border-secondary transition-all hover:shadow-lg bg-gray-100"
+                >
+                  <div className="aspect-video flex items-center justify-center p-4">
+                    <div className="text-center space-y-2">
+                      <div className="text-4xl">📊</div>
+                      <p className="text-sm font-medium text-foreground">View Slides</p>
+                      <p className="text-xs text-text-light">Click to open presentation</p>
+                    </div>
                   </div>
+                </a>
+
+                {/* Right column: Paper details */}
+                <div className="space-y-3">
+                  <p className="text-sm font-medium text-text-light">{paper.authors}</p>
+                  {paper.venue && <div className="text-sm text-text-light">{paper.venue}</div>}
+                  {paper.abstract && (
+                    <div className="space-y-2">
+                      <p className="font-semibold text-foreground text-sm">Abstract:</p>
+                      <p className="text-text-light leading-relaxed text-sm">{paper.abstract}</p>
+                    </div>
+                  )}
+                  {paper.description && !paper.abstract && <p className="text-text-light">{paper.description}</p>}
                 </div>
-              ) : (
+              </div>
+            </div>
+          ) : null
+        ))}
+      </div>
+
+      {/* Papers without slides: displayed in accordion */}
+      <Accordion type="single" collapsible className="w-full mt-6">
+        {currentPapers.map((paper, index) => (
+          !paper.slides ? (
+            <AccordionItem key={index} value={`item-${index}`}>
+              <AccordionTrigger className="text-left hover:no-underline">
+                <div className="flex flex-col items-start">
+                  <span className="font-medium text-foreground">{paper.title}</span>
+                  <span className="text-sm text-text-light">{paper.status}</span>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent>
                 <div className="space-y-3 pt-2">
                   <p className="text-sm font-medium text-text-light">{paper.authors}</p>
                   {paper.venue && <div className="text-sm text-text-light">{paper.venue}</div>}
                   {paper.abstract && <p className="text-text-light leading-relaxed">{paper.abstract}</p>}
                   {paper.description && !paper.abstract && <p className="text-text-light">{paper.description}</p>}
                 </div>
-              )}
-            </AccordionContent>
-          </AccordionItem>
+              </AccordionContent>
+            </AccordionItem>
+          ) : null
         ))}
       </Accordion>
 
