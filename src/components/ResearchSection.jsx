@@ -128,20 +128,24 @@ const ResearchSection = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Left column: Slides preview */}
-                <a
-                  href={paper.slides.replace('?raw=1', '?dl=0')}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block border border-border rounded-lg overflow-hidden hover:border-secondary transition-all hover:shadow-lg bg-gray-100"
-                >
-                  <div className="aspect-video flex items-center justify-center p-4">
-                    <div className="text-center space-y-2">
-                      <div className="text-4xl">📊</div>
-                      <p className="text-sm font-medium text-foreground">View Slides</p>
-                      <p className="text-xs text-text-light">Click to open presentation</p>
-                    </div>
+                <div className="border border-border rounded-lg overflow-hidden">
+                  <iframe
+                    src={paper.slides.replace('&dl=0', '').replace('&raw=1', '') + '&embedded=true'}
+                    className="w-full h-96"
+                    title={`${paper.title} Slides`}
+                    allowFullScreen
+                  />
+                  <div className="bg-gray-50 border-t border-border p-2 text-center">
+                    <a
+                      href={paper.slides.replace('&raw=1', '&dl=0')}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm text-secondary hover:underline"
+                    >
+                      Open full presentation →
+                    </a>
                   </div>
-                </a>
+                </div>
 
                 {/* Right column: Paper details */}
                 <div className="space-y-3">
@@ -150,7 +154,7 @@ const ResearchSection = () => {
                   {paper.abstract && (
                     <div className="space-y-2">
                       <p className="font-semibold text-foreground text-sm">Abstract:</p>
-                      <p className="text-text-light leading-relaxed text-sm">{paper.abstract}</p>
+                      <p className="text-text-light leading-relaxed text-sm line-clamp-12">{paper.abstract}</p>
                     </div>
                   )}
                   {paper.description && !paper.abstract && <p className="text-text-light">{paper.description}</p>}
