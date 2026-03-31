@@ -128,7 +128,7 @@ const ResearchSection = () => {
         {currentPapers.map((paper, index) => (
           paper.slides ? (
             // Papers with slides: displayed as visible cards with two-column layout
-            <div key={index} className="border border-border rounded-lg p-6 space-y-4">
+            <div key={index} className="border-2 border-secondary rounded-lg p-6 space-y-4 bg-gradient-to-br from-white to-accent/20">
               <div className="space-y-2">
                 <h3 className="text-xl font-semibold text-foreground">{paper.title}</h3>
                 <p className="text-sm text-text-light">{paper.status}</p>
@@ -140,7 +140,7 @@ const ResearchSection = () => {
                   href={paper.slides}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block border border-border rounded-lg overflow-hidden hover:border-secondary transition-all hover:shadow-lg group"
+                  className="block border-2 border-dashed border-secondary rounded-lg overflow-hidden hover:border-solid hover:shadow-xl transition-all group"
                 >
                   {paper.slidePreview ? (
                     <img
