@@ -69,14 +69,14 @@ const ResearchSection = () => {
       // slides: "YOUR_DROPBOX_LINK_HERE?raw=1", // Uncomment and add your Dropbox link
     },
     {
-      title: "Temporal Distance and Global Knowledge Diffusion on Online Platform",
+      title: "Unwind the Clock? Temporal Distance and User Interactions on a Digital Platform",
       authors: "Wesley W. Koo, Miaomiao Zhang, and Prithwiraj (Raj) Choudhury",
       venue: (
         <span>
           Conditional Accept at Strategic Management Journal
         </span>
       ),
-      abstract: "Add your abstract here",
+      abstract: "Global interactions often generate enormous value for digital platforms and their users. However, users are usually dispersed across time zones. Using proprietary data from StackOverflow, we implement a regression discontinuity design to causally estimate that a one-hour increase (decrease) in the temporal distance between two regions leads to a 13.6% decrease (9.5% increase) in views and a 20.9% decrease (21.0% increase) in votes between those regions. These temporal frictions are particularly salient for niche knowledge communities (e.g., sudo, slack-api) but not for popular knowledge communities (e.g., Python, JavaScript). Importantly, a platform can mitigate temporal barriers by shuffling content representation. This study contributes to the research on platform strategy, temporal distance, and global knowledge.",
       status: "Conditional Accept",
       slides: "https://www.dropbox.com/scl/fi/sajoe9kzuidqbizl85k6l/MiaomiaoZhang_UnwindClock.pdf?rlkey=kl2ktxz0fwcw9m0y9p8mozq61&st=7uxv3yxr&dl=0",
       slidePreview: `${import.meta.env.BASE_URL}temporal-distance-preview.png`,
