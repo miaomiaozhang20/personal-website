@@ -30,7 +30,7 @@ const AboutSection = () => {
             >
               Laboratory for Innovation Science Research
             </a>{" "}
-            at the Digital, Data, and Design Institute at Harvard.
+            at the HBS AI Institute.
           </p>
           <p className="text-lg text-text-light">
             I study how decision makers learn under uncertainty in the earliest stages of innovation process. I design and run field experiments in collaboration with entrepreneurial ecosystem partners. Theoretically, I am interested in the behavioral and cognitive aspects of firms from a problem-solving perspective. Empirically, I identify specific constraints in information processing, technology augmentation, and knowledge diffusion, and test interventions that mitigate these frictions.
