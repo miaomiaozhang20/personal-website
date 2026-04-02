@@ -68,6 +68,7 @@ const ResearchSection = () => {
       status: "Accepted",
       slides: "https://www.dropbox.com/scl/fi/1ngutszsddsxoqb39xmz6/MiaomiaoZhang_Matchmaker.pdf?rlkey=yo592khk5zsdakmqyagqmh4q3&st=bi26s1u3&dl=0",
       slidePreview: `${import.meta.env.BASE_URL}matchmaker-preview.png`,
+      imageScale: 'small',
     },
     {
       title: "Unwind the Clock? Temporal Distance and User Interactions on a Digital Platform",
@@ -140,13 +141,13 @@ const ResearchSection = () => {
                   href={paper.slides}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block border-2 border-dashed border-secondary rounded-lg overflow-hidden hover:border-solid hover:shadow-xl transition-all group"
+                  className={`block border-2 border-dashed border-secondary rounded-lg overflow-hidden hover:border-solid hover:shadow-xl transition-all group ${paper.imageScale === 'small' ? 'flex items-center justify-center bg-gray-50' : ''}`}
                 >
                   {paper.slidePreview ? (
                     <img
                       src={paper.slidePreview}
                       alt={`${paper.title} Preview`}
-                      className="w-full h-auto object-cover"
+                      className={paper.imageScale === 'small' ? 'max-h-96 w-auto object-contain' : 'w-full h-auto object-cover'}
                     />
                   ) : (
                     <div className="aspect-video bg-gray-100 flex items-center justify-center">
