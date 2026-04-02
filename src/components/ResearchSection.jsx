@@ -66,7 +66,8 @@ const ResearchSection = () => {
       ),
       abstract: "There is growing interest in applying artificial intelligence (AI) to automate and support complex decision-making tasks. However, it remains unclear how algorithms compare to human judgment in contexts requiring semantic understanding and domain expertise. We examine this in the context of the judge assignment problem, matching submissions to suitably qualified judges. Specifically, we tackled this problem at the Harvard President's Innovation Challenge, the university's premier venture competition awarding over $500,000 to student and alumni startups. This represents a real-world environment where high-quality judge assignment is essential. We developed an AI-based judge-assignment algorithm, Hybrid Lexical-Semantic Similarity Ensemble (HLSE), and deployed it at the competition. We then evaluated its performance against human expert assignments using blinded match-quality scores from judges on 309 judge-venture pairs. Using a Mann-Whitney U statistic based test, we found no statistically significant difference in assignment quality between the two approaches (AUC=0.48,p=0.40); on average, algorithmic matches are rated 3.90 and manual matches 3.94 on a 5-point scale, where 5 indicates an excellent match. Furthermore, manual assignments that previously required a full week could be automated in several hours by the algorithm during deployment. These results demonstrate that HLSE achieves human-expert-level matching quality while offering greater scalability and efficiency, underscoring the potential of AI-driven solutions to support and enhance human decision-making for judge assignment in high-stakes settings.",
       status: "Accepted",
-      // slides: "YOUR_DROPBOX_LINK_HERE?raw=1", // Uncomment and add your Dropbox link
+      slides: "https://www.dropbox.com/scl/fi/1ngutszsddsxoqb39xmz6/MiaomiaoZhang_Matchmaker.pdf?rlkey=yo592khk5zsdakmqyagqmh4q3&st=bi26s1u3&dl=0",
+      slidePreview: `${import.meta.env.BASE_URL}matchmaker-preview.png`,
     },
     {
       title: "Unwind the Clock? Temporal Distance and User Interactions on a Digital Platform",
@@ -131,7 +132,6 @@ const ResearchSection = () => {
             <div key={index} className="border-2 border-secondary rounded-lg p-6 space-y-4 bg-gradient-to-br from-white to-accent/20">
               <div className="space-y-2">
                 <h3 className="text-xl font-semibold text-foreground">{paper.title}</h3>
-                <p className="text-sm text-text-light">{paper.status}</p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -189,7 +189,6 @@ const ResearchSection = () => {
               <AccordionTrigger className="text-left hover:no-underline">
                 <div className="flex flex-col items-start">
                   <span className="font-medium text-foreground">{paper.title}</span>
-                  <span className="text-sm text-text-light">{paper.status}</span>
                 </div>
               </AccordionTrigger>
               <AccordionContent>
@@ -217,7 +216,6 @@ const ResearchSection = () => {
             <AccordionTrigger className="text-left hover:no-underline">
               <div className="flex flex-col items-start">
                 <span className="font-medium text-foreground">{paper.title}</span>
-                <span className="text-sm text-text-light">{paper.status}</span>
               </div>
             </AccordionTrigger>
             <AccordionContent>

@@ -82,7 +82,7 @@ const TabNavigation = ({ activeSection, activeTab, setActiveTab }) => {
               : 'text-text-light hover:text-foreground'
           }`}
         >
-          Miscellaneous
+          Misc
           {isActive('miscellaneous') && (
             <motion.div
               layoutId="activeTab"

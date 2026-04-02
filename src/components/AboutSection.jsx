@@ -52,7 +52,7 @@ const AboutSection = () => {
               rel="noopener noreferrer"
               className="hover:underline"
             >
-              Curriculum Vitae
+              CV
             </a>
           </p>
         </div>

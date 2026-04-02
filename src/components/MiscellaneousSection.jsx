@@ -8,21 +8,22 @@ const MiscellaneousSection = () => {
       year: "G2",
       commitment: (
         <span>
-          Designed and taught undergrad{" "}
+          Designed a{" "}
           <a
             href="https://subsequent-germanium-5af.notion.site/EC970-Economics-of-Innovation-with-Generative-AI-b8e6e85d47d04883991e16993feee735?source=copy_link"
             target="_blank"
             rel="noopener noreferrer"
             className="text-secondary hover:underline"
           >
-            AI & Innovation course
+            new course
           </a>
+          {" "}on AI and innovation for economics major undergrads
         </span>
       ),
     },
     {
       year: "G3",
-      commitment: "Teaching yoga at Mather House as a non-resident tutor, later the Shad Gym at HBS",
+      commitment: "Teaching yoga at Mather House as a non-resident tutor, and later at the Shad Gym at HBS",
     },
     {
       year: "G4",
