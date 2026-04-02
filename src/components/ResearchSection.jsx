@@ -189,6 +189,7 @@ const ResearchSection = () => {
               <AccordionTrigger className="text-left hover:no-underline">
                 <div className="flex flex-col items-start">
                   <span className="font-medium text-foreground">{paper.title}</span>
+                  <span className="text-sm text-text-light">{paper.status}</span>
                 </div>
               </AccordionTrigger>
               <AccordionContent>
@@ -216,6 +217,7 @@ const ResearchSection = () => {
             <AccordionTrigger className="text-left hover:no-underline">
               <div className="flex flex-col items-start">
                 <span className="font-medium text-foreground">{paper.title}</span>
+                <span className="text-sm text-text-light">{paper.status}</span>
               </div>
             </AccordionTrigger>
             <AccordionContent>
