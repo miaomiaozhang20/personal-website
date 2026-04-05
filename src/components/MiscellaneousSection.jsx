@@ -97,30 +97,22 @@ const MiscellaneousSection = () => {
           href="https://subsequent-germanium-5af.notion.site/EC970-Economics-of-Innovation-with-Generative-AI-b8e6e85d47d04883991e16993feee735"
           target="_blank"
           rel="noopener noreferrer"
-          className="block mt-6 group"
+          className="block mt-6 group max-w-md"
         >
-          <div className="border border-primary/20 rounded-sm overflow-hidden hover:border-primary/40 transition-colors">
-            <div className="aspect-video bg-gradient-to-br from-primary/5 to-secondary/10 flex items-center justify-center">
+          <div className="border border-primary/20 rounded-sm overflow-hidden hover:border-primary/40 transition-colors flex">
+            <div className="w-24 h-24 flex-shrink-0 overflow-hidden">
               <img
-                src={`${import.meta.env.BASE_URL}course-preview.png`}
+                src={`${import.meta.env.BASE_URL}course-preview.webp`}
                 alt="EC970 Course Preview"
                 className="w-full h-full object-cover"
-                onError={(e) => {
-                  e.target.style.display = 'none';
-                  e.target.nextSibling.style.display = 'flex';
-                }}
               />
-              <div className="hidden flex-col items-center justify-center text-text-light/50">
-                <span className="text-4xl mb-2">📚</span>
-                <span className="text-sm">Course Preview</span>
-              </div>
             </div>
-            <div className="p-4">
-              <h3 className="font-medium text-foreground group-hover:text-secondary transition-colors">
+            <div className="p-3 flex flex-col justify-center">
+              <h3 className="font-medium text-foreground group-hover:text-secondary transition-colors text-sm">
                 EC970: Economics of Innovation with Generative AI
               </h3>
-              <p className="text-sm text-text-light mt-1">
-                A course designed for economics major undergraduates exploring the intersection of AI and innovation
+              <p className="text-xs text-text-light mt-1">
+                A course for economics undergraduates on AI and innovation
               </p>
             </div>
           </div>
