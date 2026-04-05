@@ -65,7 +65,7 @@ const AboutSection = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Coast-to-Coast Doctoral Workshop */}
-          <div className="border border-border rounded-lg overflow-hidden hover:border-secondary transition-all hover:shadow-lg">
+          <div className="border border-transparent rounded-lg overflow-hidden hover:border-secondary transition-all hover:shadow-lg">
             <div className="aspect-video overflow-hidden pointer-events-none">
               <iframe
                 src="https://coast-to-coast.org"
@@ -90,7 +90,7 @@ const AboutSection = () => {
           </div>
 
           {/* Innovation Growth Lab */}
-          <div className="border border-border rounded-lg overflow-hidden hover:border-secondary transition-all hover:shadow-lg">
+          <div className="border border-transparent rounded-lg overflow-hidden hover:border-secondary transition-all hover:shadow-lg">
             <div className="aspect-video overflow-hidden pointer-events-none">
               <iframe
                 src="https://www.innovationgrowthlab.org/about/research-network/phd-community"
@@ -115,7 +115,7 @@ const AboutSection = () => {
           </div>
 
           {/* HBS Shad */}
-          <div className="border border-border rounded-lg overflow-hidden hover:border-secondary transition-all hover:shadow-lg">
+          <div className="border border-transparent rounded-lg overflow-hidden hover:border-secondary transition-all hover:shadow-lg">
             <div className="aspect-video overflow-hidden pointer-events-none">
               <iframe
                 src="https://www.instagram.com/p/DO6tNaEEcy4/embed"
