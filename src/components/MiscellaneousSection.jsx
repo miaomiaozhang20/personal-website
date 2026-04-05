@@ -86,7 +86,7 @@ const MiscellaneousSection = () => {
           Why I Teach
         </h2>
         <p className="text-text-light leading-relaxed">
-          <span className="font-medium">教学相长</span> (jiào xué xiāng zhǎng) — "Teaching and learning promote each other."
+          <span className="font-medium italic">教学相长</span> (jiào xué xiāng zhǎng) — "Teaching and learning promote each other."
           This ancient Chinese wisdom captures my belief that the act of teaching deepens one's own understanding.
           When we explain ideas to others, we discover gaps in our knowledge and forge new connections.
           Teaching is not just a transfer of information; it is a mutual journey of growth.
@@ -112,7 +112,7 @@ const MiscellaneousSection = () => {
                 EC970: Economics of Innovation with Generative AI
               </h3>
               <p className="text-xs text-text-light mt-1">
-                A course for economics undergraduates on AI and innovation
+                The first undergraduate tutorial for economics major Harvard College students on Generative AI
               </p>
             </div>
           </div>
