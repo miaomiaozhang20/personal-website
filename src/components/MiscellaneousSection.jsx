@@ -8,16 +8,15 @@ const MiscellaneousSection = () => {
       year: "G2",
       commitment: (
         <span>
-          Designed a{" "}
+          Registered Yoga Teacher Training 200 Hours with{" "}
           <a
-            href="https://subsequent-germanium-5af.notion.site/EC970-Economics-of-Innovation-with-Generative-AI-b8e6e85d47d04883991e16993feee735?source=copy_link"
+            href="https://downunderyoga.com/200-hour-boston-yoga-teacher-training"
             target="_blank"
             rel="noopener noreferrer"
             className="text-secondary hover:underline"
           >
-            new course
+            Down Under School of Yoga
           </a>
-          {" "}on AI and innovation for economics major undergrads
         </span>
       ),
     },
@@ -86,7 +85,46 @@ const MiscellaneousSection = () => {
         <h2 className="font-display text-2xl font-semibold text-foreground">
           Why I Teach
         </h2>
-        <p className="text-text-light italic">More details coming soon</p>
+        <p className="text-text-light leading-relaxed">
+          <span className="font-medium">教学相长</span> (jiào xué xiāng zhǎng) — "Teaching and learning promote each other."
+          This ancient Chinese wisdom captures my belief that the act of teaching deepens one's own understanding.
+          When we explain ideas to others, we discover gaps in our knowledge and forge new connections.
+          Teaching is not just a transfer of information; it is a mutual journey of growth.
+        </p>
+
+        {/* Course Card */}
+        <a
+          href="https://subsequent-germanium-5af.notion.site/EC970-Economics-of-Innovation-with-Generative-AI-b8e6e85d47d04883991e16993feee735"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block mt-6 group"
+        >
+          <div className="border border-primary/20 rounded-sm overflow-hidden hover:border-primary/40 transition-colors">
+            <div className="aspect-video bg-gradient-to-br from-primary/5 to-secondary/10 flex items-center justify-center">
+              <img
+                src={`${import.meta.env.BASE_URL}course-preview.png`}
+                alt="EC970 Course Preview"
+                className="w-full h-full object-cover"
+                onError={(e) => {
+                  e.target.style.display = 'none';
+                  e.target.nextSibling.style.display = 'flex';
+                }}
+              />
+              <div className="hidden flex-col items-center justify-center text-text-light/50">
+                <span className="text-4xl mb-2">📚</span>
+                <span className="text-sm">Course Preview</span>
+              </div>
+            </div>
+            <div className="p-4">
+              <h3 className="font-medium text-foreground group-hover:text-secondary transition-colors">
+                EC970: Economics of Innovation with Generative AI
+              </h3>
+              <p className="text-sm text-text-light mt-1">
+                A course designed for economics major undergraduates exploring the intersection of AI and innovation
+              </p>
+            </div>
+          </div>
+        </a>
       </div>
 
       {/* Divider */}
