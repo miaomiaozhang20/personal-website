@@ -117,6 +117,28 @@ const MiscellaneousSection = () => {
             </div>
           </div>
         </a>
+
+        {/* Summer Lecture */}
+        <div className="mt-6 max-w-md">
+          <div className="border border-primary/20 rounded-sm overflow-hidden p-3">
+            <h3 className="font-medium text-foreground text-sm">
+              <a
+                href="https://www.dropbox.com/scl/fi/a170sfepnqsoh9d2g7kq6/Raj_FoW_Miaomiao_GenAI_062325.pdf?rlkey=wumqgzykpufnlpmv7n7nlbv9i&st=wdjcngjp&dl=0"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-secondary transition-colors"
+              >
+                Future of Work and Jobs — Organizational Perspective
+              </a>
+            </h3>
+            <p className="text-xs text-text-light mt-1">
+              Summer lecture on Generative AI
+            </p>
+            <p className="text-xs text-text-light mt-2 italic">
+              Grateful to Professor Prithwiraj (Raj) Choudhury for inviting me to lead this lecture, and to Professor Andy Wu and Professor Léonard Boussioux for generously sharing their course materials. All errors remain my own.
+            </p>
+          </div>
+        </div>
       </div>
 
       {/* Divider */}
