@@ -1,3 +1,5 @@
+import IndustryResearchSection from "@/components/IndustryResearchSection";
+
 const MiscellaneousSection = () => {
   const yearlyCommitments = [
     {
@@ -75,6 +77,8 @@ const MiscellaneousSection = () => {
               </div>
             </div>
           ))}
+
+          <IndustryResearchSection />
         </div>
       </div>
 
