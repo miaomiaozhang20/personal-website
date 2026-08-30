@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import TabNavigation from "@/components/TabNavigation";
 import AboutSection from "@/components/AboutSection";
 import ResearchSection from "@/components/ResearchSection";
+import AffiliationsSection from "@/components/AffiliationsSection";
 import MiscellaneousSection from "@/components/MiscellaneousSection";
 
 const Index = () => {
@@ -55,6 +56,10 @@ const Index = () => {
 
             <section id="research" className="scroll-mt-8 mt-8">
               <ResearchSection />
+            </section>
+
+            <section id="affiliations" className="scroll-mt-8 mt-8">
+              <AffiliationsSection />
             </section>
           </motion.div>
         ) : (
