@@ -67,7 +67,7 @@ const ResearchSection = () => {
           </a>
         </span>
       ),
-      abstract: "There is growing interest in applying artificial intelligence (AI) to automate and support complex decision-making tasks. However, it remains unclear how algorithms compare to human judgment in contexts requiring semantic understanding and domain expertise. We examine this in the context of the judge assignment problem, matching submissions to suitably qualified judges. Specifically, we tackled this problem at the Harvard President's Innovation Challenge, the university's premier venture competition awarding over $500,000 to student and alumni startups. This represents a real-world environment where high-quality judge assignment is essential. We developed an AI-based judge-assignment algorithm, Hybrid Lexical-Semantic Similarity Ensemble (HLSE), and deployed it at the competition. We then evaluated its performance against human expert assignments using blinded match-quality scores from judges on 309 judge-venture pairs. Using a Mann-Whitney U statistic based test, we found no statistically significant difference in assignment quality between the two approaches (AUC=0.48,p=0.40); on average, algorithmic matches are rated 3.90 and manual matches 3.94 on a 5-point scale, where 5 indicates an excellent match. Furthermore, manual assignments that previously required a full week could be automated in several hours by the algorithm during deployment. These results demonstrate that HLSE achieves human-expert-level matching quality while offering greater scalability and efficiency, underscoring the potential of AI-driven solutions to support and enhance human decision-making for judge assignment in high-stakes settings.",
+      abstract: "There is growing interest in applying artificial intelligence (AI) to automate and support complex decision-making tasks. However, it remains unclear how algorithms compare to human judgment in contexts requiring semantic understanding and domain expertise. We examine this in the context of the judge assignment problem, matching submissions to suitably qualified judges. We developed an AI-based judge-assignment algorithm, Hybrid Lexical-Semantic Similarity Ensemble (HLSE). We evaluated its performance against human expert assignments using blinded match-quality scores from judges on 309 judge-venture pairs. Using a Mann-Whitney U statistic based test, we found no statistically significant difference in assignment quality between the two approaches (AUC=0.48,p=0.40). Furthermore, manual assignments that previously required a full week could be automated in several hours by the algorithm during deployment. These results demonstrate that HLSE achieves human-expert-level matching quality while offering greater scalability and efficiency.",
       status: "Accepted",
       slides: "https://www.dropbox.com/scl/fi/1ngutszsddsxoqb39xmz6/MiaomiaoZhang_Matchmaker.pdf?rlkey=yo592khk5zsdakmqyagqmh4q3&st=bi26s1u3&dl=0",
       slidePreview: `${import.meta.env.BASE_URL}matchmaker-preview.png`,
@@ -78,11 +78,19 @@ const ResearchSection = () => {
       authors: "Wesley W. Koo, Miaomiao Zhang, and Prithwiraj (Raj) Choudhury",
       venue: (
         <span>
-          Conditional Accept at Strategic Management Journal
+          Published in{" "}
+          <a
+            href="https://sms.onlinelibrary.wiley.com/doi/abs/10.1002/smj.70105"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-secondary hover:underline"
+          >
+            Strategic Management Journal
+          </a>
         </span>
       ),
       abstract: "Global interactions often generate enormous value for digital platforms and their users. However, users are usually dispersed across time zones. Using proprietary data from StackOverflow, we implement a regression discontinuity design to causally estimate that a one-hour increase (decrease) in the temporal distance between two regions leads to a 13.6% decrease (9.5% increase) in views and a 20.9% decrease (21.0% increase) in votes between those regions. These temporal frictions are particularly salient for niche knowledge communities (e.g., sudo, slack-api) but not for popular knowledge communities (e.g., Python, JavaScript). Importantly, a platform can mitigate temporal barriers by shuffling content representation. This study contributes to the research on platform strategy, temporal distance, and global knowledge.",
-      status: "Conditional Accept",
+      status: "Published",
       slides: "https://www.dropbox.com/scl/fi/sajoe9kzuidqbizl85k6l/MiaomiaoZhang_UnwindClock.pdf?rlkey=kl2ktxz0fwcw9m0y9p8mozq61&st=7uxv3yxr&dl=0",
       slidePreview: `${import.meta.env.BASE_URL}temporal-distance-preview.png`,
     },
@@ -144,7 +152,7 @@ const ResearchSection = () => {
                   href={paper.slides}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`block border-2 border-dashed border-secondary rounded-lg overflow-hidden hover:border-solid hover:shadow-xl transition-all group ${paper.imageScale === 'small' ? 'flex items-center justify-center bg-gray-50' : ''}`}
+                  className={`block border-2 border-dashed border-secondary rounded-lg overflow-hidden hover:border-solid hover:shadow-xl transition-all group ${paper.imageScale === 'small' ? 'flex flex-col bg-gray-50' : ''}`}
                 >
                   {paper.slidePreview ? (
                     Array.isArray(paper.slidePreview) ? (
@@ -162,7 +170,7 @@ const ResearchSection = () => {
                       <img
                         src={paper.slidePreview}
                         alt={`${paper.title} Preview`}
-                        className={paper.imageScale === 'small' ? 'max-h-96 w-auto object-contain' : 'w-full h-auto object-cover'}
+                        className={paper.imageScale === 'small' ? 'max-h-96 w-auto object-contain mx-auto' : 'w-full h-auto object-cover'}
                       />
                     )
                   ) : (
@@ -173,7 +181,7 @@ const ResearchSection = () => {
                       </div>
                     </div>
                   )}
-                  <div className="bg-gray-50 border-t border-border p-3 text-center group-hover:bg-gray-100 transition-colors">
+                  <div className="w-full mt-auto bg-gray-50 border-t border-border p-3 text-center group-hover:bg-gray-100 transition-colors">
                     <p className="text-sm text-secondary font-medium">
                       Click to view full presentation →
                     </p>
