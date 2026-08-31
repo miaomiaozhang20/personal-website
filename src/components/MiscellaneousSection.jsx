@@ -92,52 +92,62 @@ const MiscellaneousSection = () => {
           Teaching is not just a transfer of information; it is a mutual journey of growth.
         </p>
 
-        {/* Course Card */}
-        <a
-          href="https://subsequent-germanium-5af.notion.site/EC970-Economics-of-Innovation-with-Generative-AI-b8e6e85d47d04883991e16993feee735"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="block mt-6 group max-w-md"
-        >
-          <div className="border border-primary/20 rounded-sm overflow-hidden hover:border-primary/40 transition-colors flex">
-            <div className="w-24 h-24 flex-shrink-0 overflow-hidden">
-              <img
-                src={`${import.meta.env.BASE_URL}course-preview.webp`}
-                alt="EC970 Course Preview"
-                className="w-full h-full object-cover"
-              />
+        {/* Course Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+          {/* Course Card - EC970 */}
+          <a
+            href="https://subsequent-germanium-5af.notion.site/EC970-Economics-of-Innovation-with-Generative-AI-b8e6e85d47d04883991e16993feee735"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block group"
+          >
+            <div className="border border-transparent rounded-lg overflow-hidden hover:border-secondary transition-all hover:shadow-lg h-full">
+              <div className="aspect-video overflow-hidden">
+                <img
+                  src={`${import.meta.env.BASE_URL}course-preview.webp`}
+                  alt="EC970 Course Preview"
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
+              <div className="p-4 space-y-2">
+                <h3 className="font-semibold text-foreground group-hover:text-secondary transition-colors">
+                  EC970: Economics of Innovation with Generative AI
+                </h3>
+                <p className="text-sm text-text-light">
+                  The first undergraduate tutorial for economics major Harvard College students on Generative AI
+                </p>
+              </div>
             </div>
-            <div className="p-3 flex flex-col justify-center">
-              <h3 className="font-medium text-foreground group-hover:text-secondary transition-colors text-sm">
-                EC970: Economics of Innovation with Generative AI
-              </h3>
-              <p className="text-xs text-text-light mt-1">
-                The first undergraduate tutorial for economics major Harvard College students on Generative AI
-              </p>
-            </div>
-          </div>
-        </a>
+          </a>
 
-        {/* Summer Lecture */}
-        <div className="mt-6 max-w-md">
-          <div className="border border-primary/20 rounded-sm overflow-hidden p-3">
-            <h3 className="font-medium text-foreground text-sm">
-              <a
-                href="https://www.dropbox.com/scl/fi/a170sfepnqsoh9d2g7kq6/Raj_FoW_Miaomiao_GenAI_062325.pdf?rlkey=wumqgzykpufnlpmv7n7nlbv9i&st=wdjcngjp&dl=0"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-secondary transition-colors"
-              >
-                Future of Work and Jobs — Organizational Perspective
-              </a>
-            </h3>
-            <p className="text-xs text-text-light mt-1">
-              Summer lecture on Generative AI
-            </p>
-            <p className="text-xs text-text-light mt-2 italic">
-              Grateful to Professor Prithwiraj (Raj) Choudhury for inviting me to lead this lecture, and to Professor Andy Wu and Professor Léonard Boussioux for generously sharing their course materials. All errors remain my own.
-            </p>
-          </div>
+          {/* Summer Lecture - Future of Work */}
+          <a
+            href="https://www.dropbox.com/scl/fi/a170sfepnqsoh9d2g7kq6/Raj_FoW_Miaomiao_GenAI_062325.pdf?rlkey=wumqgzykpufnlpmv7n7nlbv9i&st=wdjcngjp&dl=0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block group"
+          >
+            <div className="border border-transparent rounded-lg overflow-hidden hover:border-secondary transition-all hover:shadow-lg h-full">
+              <div className="aspect-video overflow-hidden bg-black">
+                <img
+                  src={`${import.meta.env.BASE_URL}ai-value-chain.png`}
+                  alt="AI Value Chain"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div className="p-4 space-y-2">
+                <h3 className="font-semibold text-foreground group-hover:text-secondary transition-colors">
+                  Future of Work and Jobs — Organizational Perspective
+                </h3>
+                <p className="text-sm text-text-light">
+                  Summer lecture on Generative AI
+                </p>
+                <p className="text-xs text-text-light italic">
+                  Grateful to Professor Prithwiraj (Raj) Choudhury for inviting me to lead this lecture, and to Professor Andy Wu and Professor Léonard Boussioux for generously sharing their course materials. All errors remain my own.
+                </p>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
 
