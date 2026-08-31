@@ -1,5 +1,3 @@
-import IndustryResearchSection from "@/components/IndustryResearchSection";
-
 const MiscellaneousSection = () => {
   const yearlyCommitments = [
     {
@@ -78,12 +76,6 @@ const MiscellaneousSection = () => {
           ))}
         </div>
       </div>
-
-      {/* Divider */}
-      <div className="border-t border-primary/20"></div>
-
-      {/* Industry Research Experience Section */}
-      <IndustryResearchSection />
 
       {/* Divider */}
       <div className="border-t border-primary/20"></div>
