@@ -55,6 +55,30 @@ const MiscellaneousSection = () => {
     },
   ];
 
+  const parkedProjects = [
+    {
+      title: "From Pilot Plots to Platform Posts: Knowledge Architectures in the Nascent Durian Industry",
+      tagline: "Entrepreneurial co-opetition among local government, university scientists, and farmers",
+      blurb:
+        "Hainan, China's southernmost province, is trying to grow a nascent industry for durian \u2014 a tropical, highly-profitable crop that has never been ecologically viable at this latitude. The project traces the co-opetition among entrepreneurs, local government, university agronomists, and smallholder farmers to assemble land, cultivars, capital, and know-how. The macro backdrop is climate adaptation. The entrepreneurial entry decision is made under unknown market potential, climate risk, and no settled view of the optimal \u201ctechnology bundle.\u201d Underneath sit questions of firm boundaries and incomplete contracts, and whether the actors approach market formation as a zero-sum game or as growing the pie.",
+      status: "Fieldwork notes",
+    },
+    {
+      title: "Formula 1 and the Halo \u201cShock\u201d",
+      tagline: "A mandated safety technology as a natural experiment",
+      blurb:
+        "The 2018 halo mandate imposed a sudden, non-negotiable design constraint on every team at once. Placeholder for a project on how organizations absorb an externally imposed technical shock \u2014 and whether the constraint redirected innovation elsewhere.",
+      status: "Placeholder",
+    },
+    {
+      title: "Mindbody \u00d7 ClassPass",
+      tagline: "Platform merger and potential antitrust concerns",
+      blurb:
+        "Placeholder for a project on what happens to studios, instructors, and consumers when a supply-side software platform merges with the demand-side aggregator that used to be its counterparty.",
+      status: "Placeholder",
+    },
+  ];
+
   return (
     <div className="space-y-12">
       {/* Yearly Commitments Section */}
@@ -74,6 +98,36 @@ const MiscellaneousSection = () => {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+
+      {/* Divider */}
+      <div className="border-t border-primary/20"></div>
+
+      {/* "Parked" Projects Section */}
+      <div className="space-y-4">
+        <h2 className="font-display text-2xl font-semibold text-foreground">
+          &ldquo;Parked&rdquo; Projects
+        </h2>
+        <p className="text-text-light leading-relaxed italic">
+          Questions I keep circling back to, parked until the right data, coauthor, or moment arrives.
+        </p>
+        <div className="space-y-4">
+          {parkedProjects.map((project, index) => (
+            <div key={index} className="border-l-2 border-primary/30 pl-4 py-2 space-y-1">
+              <div className="flex items-baseline justify-between gap-3">
+                <h3 className="font-semibold text-foreground">{project.title}</h3>
+                <span className="text-xs text-text-light italic whitespace-nowrap">
+                  {project.status}
+                </span>
+              </div>
+              <p className="text-sm text-secondary">{project.tagline}</p>
+              <p className="text-text-light leading-relaxed">{project.blurb}</p>
+            </div>
+          ))}
+          <div className="border-l-2 border-primary/30 pl-4 py-2">
+            <p className="text-text-light italic">&hellip; and a lot more!</p>
+          </div>
         </div>
       </div>
 
