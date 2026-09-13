@@ -1,3 +1,10 @@
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
 const MiscellaneousSection = () => {
   const yearlyCommitments = [
     {
@@ -55,6 +62,26 @@ const MiscellaneousSection = () => {
     },
   ];
 
+  const ideaSwarms = [
+    {
+      title: "Marketing of Science",
+      tagline: "There is a Science of Science, but the marketing of it might just be as important!",
+      paragraphs: [
+        "Research has studied the Science of Science extensively: how discoveries get produced, funded, and cited. It has studied the marketing of science far less. I suspect storytelling and narrative are not packaging applied after the fact but a crucial part of the scientific process itself \u2014 shaping what gets framed as a problem, what counts as a \u201cgood\u201d question, and what audience appreciates the type of work innovators dedicate themselves to commit. This also raises the customer question every entrepreneur faces: who are you selling to? Impact is multi-faceted and reaches well beyond scholarly citations, which makes the choice of audience a real strategic decision and sampling matters too.",
+      ],
+    },
+    {
+      title: "Do I become more (dis)similar to my advisor?",
+      tagline: "How advisors' personalities shape the scholars their students become",
+      paragraphs: [
+        "How much of a scholar is inherited? I want to trace how PhD advisors' personalities and styles shape their candidates, with heterogeneity across fields and attention to the extreme cases at both tails. Outcomes to measure: the academia-versus-industry choice, the style of the papers students go on to write, and the most interesting part, the mentoring style they adopt once they become advisors themselves.",
+        "A related question one career stage later: how wide do junior faculty explore, and how soon do they converge? Junior faculty starting out are working out what they want and need in a research portfolio. Do they run something like a sampling process, the way entrepreneurs find customers and validate their market? My hunch is that many under-explore the problem space and converge to a \u201cscholarly identity\u201d too soon, which limits the upside potential of their impact (again, not necessarily as measured by citations).",
+      ],
+      note:
+        "I plan to run LLM-led interviews to scale up data points collection, but I will head down to do a few interviews myself first to understand if this is a \u201cgood\u201d question worthy of studying!",
+    },
+  ];
+
   const parkedProjects = [
     {
       title: "From Pilot Plots to Platform Posts: Knowledge Architectures in the Nascent Durian Industry",
@@ -62,20 +89,6 @@ const MiscellaneousSection = () => {
       blurb:
         "Hainan, China's southernmost province, is trying to grow a nascent industry for durian \u2014 a tropical, highly-profitable crop that has never been ecologically viable at this latitude. The project traces the co-opetition among entrepreneurs, local government, university agronomists, and smallholder farmers to assemble land, cultivars, capital, and know-how. The macro backdrop is climate adaptation. The entrepreneurial entry decision is made under unknown market potential, climate risk, and no settled view of the optimal \u201ctechnology bundle.\u201d Underneath sit questions of firm boundaries and incomplete contracts, and whether the actors approach market formation as a zero-sum game or as growing the pie.",
       status: "Fieldwork notes",
-    },
-    {
-      title: "Formula 1 and the Halo \u201cShock\u201d",
-      tagline: "A mandated safety technology as a natural experiment",
-      blurb:
-        "The 2018 halo mandate imposed a sudden, non-negotiable design constraint on every team at once. Placeholder for a project on how organizations absorb an externally imposed technical shock \u2014 and whether the constraint redirected innovation elsewhere.",
-      status: "Placeholder",
-    },
-    {
-      title: "Mindbody \u00d7 ClassPass",
-      tagline: "Platform merger and potential antitrust concerns",
-      blurb:
-        "Placeholder for a project on what happens to studios, instructors, and consumers when a supply-side software platform merges with the demand-side aggregator that used to be its counterparty.",
-      status: "Placeholder",
     },
   ];
 
@@ -99,6 +112,43 @@ const MiscellaneousSection = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      {/* Divider */}
+      <div className="border-t border-primary/20"></div>
+
+      {/* Idea Swarms Section */}
+      <div className="space-y-4">
+        <h2 className="font-display text-2xl font-semibold text-foreground">
+          Idea Swarms
+        </h2>
+        <p className="text-text-light leading-relaxed italic">
+          Half-formed ideas still buzzing around&hellip;
+        </p>
+        <Accordion type="single" collapsible className="w-full">
+          {ideaSwarms.map((idea, index) => (
+            <AccordionItem key={index} value={`idea-${index}`}>
+              <AccordionTrigger className="text-left hover:no-underline">
+                <div className="flex flex-col items-start">
+                  <span className="font-medium text-foreground">{idea.title}</span>
+                  <span className="text-sm text-secondary">{idea.tagline}</span>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent>
+                <div className="space-y-3 pt-2">
+                  {idea.paragraphs.map((paragraph, paragraphIndex) => (
+                    <p key={paragraphIndex} className="text-text-light leading-relaxed">
+                      {paragraph}
+                    </p>
+                  ))}
+                  {idea.note && (
+                    <p className="text-text-light leading-relaxed italic">{idea.note}</p>
+                  )}
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
       </div>
 
       {/* Divider */}
