@@ -263,7 +263,16 @@ const MiscellaneousSection = () => {
         <h2 className="font-display text-2xl font-semibold text-foreground">
           Life Hacks: Mind, Attention, Practice
         </h2>
-        <p className="text-text-light italic">More details coming soon</p>
+        <p className="text-lg leading-relaxed text-text-light">
+          I think one thing i realized is that there are only two category of
+          things happening in this world, one is "good" things and the other is
+          things you don't yet know how they can be "good". One can argue that
+          it's through learnings and experiences that the latter category should
+          be rephrased to be closer to "I" have the ability to make everything
+          "better" if it doesn't land its best shape at the first place.
+          Different perspectives but similar conclusion. I don't claim agency
+          just like how i don't think there's necessarily an objective truth.
+        </p>
       </div>
     </div>
   );
