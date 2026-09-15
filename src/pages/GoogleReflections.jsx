@@ -73,6 +73,17 @@ const GoogleReflections = () => {
           Wi-Fi.
         </p>
 
+        <figure className="flex justify-center py-2">
+          <img
+            src={`${import.meta.env.BASE_URL}google-gbus.jpg`}
+            alt="A Google shuttle departure board listing Mountain View routes, wait times and weather"
+            width="875"
+            height="1400"
+            loading="lazy"
+            className="w-full max-w-sm h-auto rounded-lg border border-border/30 shadow-sm"
+          />
+        </figure>
+
         <p className="text-lg leading-relaxed text-text-light">
           Then came the highly protected “Gradient Canopy” office: the
           architecture, the intentional design choices, the micro-kitchens, and
@@ -80,6 +91,33 @@ const GoogleReflections = () => {
           how people moved through and interacted with the space. Just like an
           art gallery.
         </p>
+
+        {/* The campus itself: atrium, canopy, bike cage. Cropped to a common
+            4:3 so the mixed orientations read as one strip. */}
+        <figure className="grid grid-cols-1 gap-3 py-2 sm:grid-cols-3">
+          {[
+            {
+              file: "google-office.jpg",
+              alt: "An indoor plaza under a timber canopy, with lampposts, planters and lounge seating",
+            },
+            {
+              file: "google-office2.jpg",
+              alt: "Sunlight falling across the building's curved timber ceiling ribs",
+            },
+            {
+              file: "google-office3.jpg",
+              alt: "Campus bikes racked behind a fence, with the Google logo on the wall beyond",
+            },
+          ].map(({ file, alt }) => (
+            <img
+              key={file}
+              src={`${import.meta.env.BASE_URL}${file}`}
+              alt={alt}
+              loading="lazy"
+              className="aspect-[4/3] w-full rounded-lg border border-border/30 object-cover shadow-sm"
+            />
+          ))}
+        </figure>
 
         <p className="text-lg leading-relaxed text-text-light">
           One badge also gave me access to Google offices around the world. I
