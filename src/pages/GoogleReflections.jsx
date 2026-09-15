@@ -1,6 +1,22 @@
 import { ArrowLeft } from "lucide-react";
 import BadgeWall from "@/components/BadgeWall";
 
+// Photos run one at a time, each closing off a stretch of text rather than
+// sitting beside another photo. Landscapes get the wider cap, portraits the
+// narrower one, so nothing runs taller than a screen.
+const Photo = ({ file, alt, width, height, cap = "max-w-lg" }) => (
+  <figure className="flex justify-center py-2">
+    <img
+      src={`${import.meta.env.BASE_URL}${file}`}
+      alt={alt}
+      width={width}
+      height={height}
+      loading="lazy"
+      className={`w-full ${cap} h-auto rounded-lg border border-border/30 shadow-sm`}
+    />
+  </figure>
+);
+
 const GoogleReflections = () => {
   return (
     <div className="max-w-4xl mx-auto space-y-8 p-6">
@@ -41,18 +57,13 @@ const GoogleReflections = () => {
           too.. I even got an apron for myself at the Google store!
         </p>
 
-        {/* The apron itself — portrait, so it is held to a column-width inset
-            rather than running full bleed. */}
-        <figure className="flex justify-center py-2">
-          <img
-            src={`${import.meta.env.BASE_URL}google-apron.jpg`}
-            alt="A black Google store apron on a hanger, printed with a smiling orange octopus"
-            width="1050"
-            height="1400"
-            loading="lazy"
-            className="w-full max-w-sm h-auto rounded-lg border border-border/30 shadow-sm"
-          />
-        </figure>
+        <Photo
+          file="google-apron.jpg"
+          alt="A black Google store apron on a hanger, printed with a smiling orange octopus"
+          width="1050"
+          height="1400"
+          cap="max-w-sm"
+        />
 
         <p className="text-lg leading-relaxed text-text-light">
           That kind of exploration (or diluted focus, if you may) was truly
@@ -73,16 +84,13 @@ const GoogleReflections = () => {
           Wi-Fi.
         </p>
 
-        <figure className="flex justify-center py-2">
-          <img
-            src={`${import.meta.env.BASE_URL}google-gbus.jpg`}
-            alt="A Google shuttle departure board listing Mountain View routes, wait times and weather"
-            width="875"
-            height="1400"
-            loading="lazy"
-            className="w-full max-w-sm h-auto rounded-lg border border-border/30 shadow-sm"
-          />
-        </figure>
+        <Photo
+          file="google-gbus.jpg"
+          alt="A Google shuttle departure board listing Mountain View routes, wait times and weather"
+          width="875"
+          height="1400"
+          cap="max-w-sm"
+        />
 
         <p className="text-lg leading-relaxed text-text-light">
           Then came the highly protected “Gradient Canopy” office: the
@@ -92,32 +100,12 @@ const GoogleReflections = () => {
           art gallery.
         </p>
 
-        {/* The campus itself: atrium, canopy, bike cage. Cropped to a common
-            4:3 so the mixed orientations read as one strip. */}
-        <figure className="grid grid-cols-1 gap-3 py-2 sm:grid-cols-3">
-          {[
-            {
-              file: "google-office.jpg",
-              alt: "An indoor plaza under a timber canopy, with lampposts, planters and lounge seating",
-            },
-            {
-              file: "google-office2.jpg",
-              alt: "Sunlight falling across the building's curved timber ceiling ribs",
-            },
-            {
-              file: "google-office3.jpg",
-              alt: "Campus bikes racked behind a fence, with the Google logo on the wall beyond",
-            },
-          ].map(({ file, alt }) => (
-            <img
-              key={file}
-              src={`${import.meta.env.BASE_URL}${file}`}
-              alt={alt}
-              loading="lazy"
-              className="aspect-[4/3] w-full rounded-lg border border-border/30 object-cover shadow-sm"
-            />
-          ))}
-        </figure>
+        <Photo
+          file="google-office.jpg"
+          alt="An indoor plaza under a timber canopy, with lampposts, planters and lounge seating"
+          width="1024"
+          height="768"
+        />
 
         <p className="text-lg leading-relaxed text-text-light">
           One badge also gave me access to Google offices around the world. I
@@ -126,12 +114,26 @@ const GoogleReflections = () => {
           lattes. Cooking classes.
         </p>
 
+        <Photo
+          file="google-office4.jpg"
+          alt="The Bay Bridge and the Embarcadero seen through an office window"
+          width="1400"
+          height="1050"
+        />
+
         <p className="text-lg leading-relaxed text-text-light">
           And, last but not least, there was my Boost schedule: yoga, spin,
           barre, Pilates, several running group around the SF bay view, and one
           bouldering and hip-hop class that I kept meaning—but was never quite
           able—to make. I even tried acro yoga for the first time.
         </p>
+
+        <Photo
+          file="google-office3.jpg"
+          alt="Campus bikes racked behind a fence, with the Google logo on the wall beyond"
+          width="1400"
+          height="1050"
+        />
 
         <p className="text-lg leading-relaxed text-text-light">
           So yes: perks, perks, perks. All thrown at you at once.
@@ -143,6 +145,13 @@ const GoogleReflections = () => {
           I understand why people are drawn to this “Infinity Machine,” and why
           many decide to stay for decades, i.e., tenured Googlers!
         </p>
+
+        <Photo
+          file="google-office5.jpg"
+          alt="An open workspace seen from above: curved partitions, lounge seating and desks in bright colours"
+          width="1400"
+          height="1050"
+        />
 
         <h2 className="font-display text-2xl font-semibold text-foreground pt-4">
           The Bitter-Sweet Lesson
@@ -186,6 +195,14 @@ const GoogleReflections = () => {
           like a fresh-out-of-school intern: a completely white canvas, or a
           sponge…
         </p>
+
+        <Photo
+          file="google-office2.jpg"
+          alt="Sunlight falling across the building's curved timber ceiling ribs"
+          width="360"
+          height="480"
+          cap="max-w-xs"
+        />
 
         <p className="text-lg leading-relaxed text-text-light">
           The muscle group I exercised was simply not the same muscle group that
