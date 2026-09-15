@@ -94,35 +94,23 @@ const GoogleReflections = () => {
 
         <p className="text-lg leading-relaxed text-text-light">
           Then came the highly protected “Gradient Canopy” office: the
-          architecture, the intentional design choices, the micro-kitchens, and
-          the feeling that an enormous amount of thought had gone into shaping
-          how people moved through and interacted with the space. Just like an
-          art gallery.
-        </p>
-
-        <p className="text-lg leading-relaxed text-text-light">
-          One badge also gave me access to Google offices around the world. I
+          architecture, the intentional design choices, the
+          micro-kitchens, and the feeling that an enormous amount of
+          thought had gone into shaping how people moved through and
+          interacted with the space. Just like an art gallery. One badge
+          also gave me access to Google offices around the world. I
           managed to tour six of them. How fun. Free buffet.
-          “Only-locals-know” ice cream fridges. Baristas with “Gemini glow”
-          lattes. Cooking classes.
-        </p>
-
-        <p className="text-lg leading-relaxed text-text-light">
-          And, last but not least, there was my Boost schedule: yoga, spin,
-          barre, Pilates, several running group around the SF bay view, and one
-          bouldering and hip-hop class that I kept meaning—but was never quite
-          able—to make. I even tried acro yoga for the first time.
-        </p>
-
-        <p className="text-lg leading-relaxed text-text-light">
-          So yes: perks, perks, perks. All thrown at you at once.
-        </p>
-
-        <p className="text-lg leading-relaxed text-text-light">
-          It was very easy to enjoy the honeymoon period of good pay, balanced
-          work-life, a supportive team, and extremely kind and nice colleagues.
-          I understand why people are drawn to this “Infinity Machine,” and why
-          many decide to stay for decades, i.e., tenured Googlers!
+          “Only-locals-know” ice cream fridges. Baristas with “Gemini
+          glow” lattes. Cooking classes. And, last but not least, there
+          was my Boost schedule: yoga, spin, barre, Pilates, several
+          running group around the SF bay view, and one bouldering and
+          hip-hop class that I kept meaning—but was never quite able—to
+          make. I even tried acro yoga for the first time. So yes: perks,
+          perks, perks. All thrown at you at once. It was very easy to
+          enjoy the honeymoon period of good pay, balanced work-life, a
+          supportive team, and extremely kind and nice colleagues. I
+          understand why people are drawn to this “Infinity Machine,” and
+          why many decide to stay for decades, i.e., tenured Googlers!
         </p>
 
         <Photo
