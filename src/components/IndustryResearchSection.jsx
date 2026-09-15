@@ -1,4 +1,5 @@
 import { Plane } from "lucide-react";
+import BadgeWall from "@/components/BadgeWall";
 
 const IndustryResearchSection = () => {
   return (
@@ -13,13 +14,9 @@ const IndustryResearchSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
         {/* Left: the badge wall as a pinned print rather than a framed card */}
         <div className="bg-white p-3 pb-2 shadow-lg -rotate-1">
-          <img
-            src={`${import.meta.env.BASE_URL}google-badges.png`}
-            alt="Google internal badge wall collected during my summer 2026 student researcher internship"
-            className="w-full h-auto"
-          />
+          <BadgeWall />
           <p className="pt-2 text-center text-xs italic text-text-light">
-            MOMA badge wall; the sparky badges meant "busy Googlers"
+            MOMA badge wall, summer 2026
           </p>
         </div>
 
