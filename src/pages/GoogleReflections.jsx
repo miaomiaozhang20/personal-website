@@ -114,26 +114,12 @@ const GoogleReflections = () => {
           lattes. Cooking classes.
         </p>
 
-        <Photo
-          file="google-office4.jpg"
-          alt="The Bay Bridge and the Embarcadero seen through an office window"
-          width="1400"
-          height="1050"
-        />
-
         <p className="text-lg leading-relaxed text-text-light">
           And, last but not least, there was my Boost schedule: yoga, spin,
           barre, Pilates, several running group around the SF bay view, and one
           bouldering and hip-hop class that I kept meaning—but was never quite
           able—to make. I even tried acro yoga for the first time.
         </p>
-
-        <Photo
-          file="google-office3.jpg"
-          alt="Campus bikes racked behind a fence, with the Google logo on the wall beyond"
-          width="1400"
-          height="1050"
-        />
 
         <p className="text-lg leading-relaxed text-text-light">
           So yes: perks, perks, perks. All thrown at you at once.
@@ -196,19 +182,17 @@ const GoogleReflections = () => {
           sponge…
         </p>
 
-        <Photo
-          file="google-office2.jpg"
-          alt="Sunlight falling across the building's curved timber ceiling ribs"
-          width="360"
-          height="480"
-          cap="max-w-xs"
-        />
-
         <p className="text-lg leading-relaxed text-text-light">
           The muscle group I exercised was simply not the same muscle group that
           academia had prepared me for. That made the learning curve steep, but
           also valuable.
         </p>
+        <Photo
+          file="google-office4.jpg"
+          alt="The Bay Bridge and the Embarcadero seen through an office window"
+          width="1400"
+          height="1050"
+        />
 
         <p className="text-lg leading-relaxed text-text-light">
           Wearing my economist hat (?), I used to think that my utility function
@@ -270,6 +254,13 @@ const GoogleReflections = () => {
           have to worry about raising a family or paying off student debt, for
           example. That privilege gives me room to ask what I actually want.
         </p>
+        <Photo
+          file="google-office2.jpg"
+          alt="Sunlight falling across the building's curved timber ceiling ribs"
+          width="360"
+          height="480"
+          cap="max-w-xs"
+        />
 
         <p className="text-lg leading-relaxed text-text-light">
           What I truly care about is working on ambitious projects with a group
@@ -307,6 +298,12 @@ const GoogleReflections = () => {
           I do think i’ve known the value of my choice better now that I’ve
           sampled more.
         </p>
+        <Photo
+          file="google-office3.jpg"
+          alt="Campus bikes racked behind a fence, with the Google logo on the wall beyond"
+          width="1400"
+          height="1050"
+        />
       </article>
     </div>
   );
