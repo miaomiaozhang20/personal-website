@@ -100,13 +100,6 @@ const GoogleReflections = () => {
           art gallery.
         </p>
 
-        <Photo
-          file="google-office.jpg"
-          alt="An indoor plaza under a timber canopy, with lampposts, planters and lounge seating"
-          width="1024"
-          height="768"
-        />
-
         <p className="text-lg leading-relaxed text-text-light">
           One badge also gave me access to Google offices around the world. I
           managed to tour six of them. How fun. Free buffet.
@@ -254,13 +247,23 @@ const GoogleReflections = () => {
           have to worry about raising a family or paying off student debt, for
           example. That privilege gives me room to ask what I actually want.
         </p>
-        <Photo
-          file="google-office2.jpg"
-          alt="Sunlight falling across the building's curved timber ceiling ribs"
-          width="360"
-          height="480"
-          cap="max-w-xs"
-        />
+
+        {/* The two architecture shots, paired. Cropped to a common 4:3 so the
+            landscape and the portrait sit level beside each other. */}
+        <figure className="grid grid-cols-2 gap-3 py-2">
+          <img
+            src={`${import.meta.env.BASE_URL}google-office.jpg`}
+            alt="An indoor plaza under a timber canopy, with lampposts, planters and lounge seating"
+            loading="lazy"
+            className="aspect-[4/3] w-full rounded-lg border border-border/30 object-cover shadow-sm"
+          />
+          <img
+            src={`${import.meta.env.BASE_URL}google-office2.jpg`}
+            alt="Sunlight falling across the building's curved timber ceiling ribs"
+            loading="lazy"
+            className="aspect-[4/3] w-full rounded-lg border border-border/30 object-cover shadow-sm"
+          />
+        </figure>
 
         <p className="text-lg leading-relaxed text-text-light">
           What I truly care about is working on ambitious projects with a group
