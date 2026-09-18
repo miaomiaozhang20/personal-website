@@ -35,9 +35,6 @@ const GoogleReflections = () => {
         <h1 className="font-display text-4xl font-bold text-foreground leading-tight">
           How I Spent My Three-Month "Paid Vacation" with Google
         </h1>
-        <p className="text-lg text-text-light">
-          Reflections on a summer 2026 student researcher internship — Miaomiao Zhang
-        </p>
       </div>
 
       <div className="border border-border/30 rounded-lg overflow-hidden">
