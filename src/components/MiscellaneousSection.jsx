@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Languages, Smartphone } from "lucide-react";
 
 const MiscellaneousSection = () => {
   const yearlyCommitments = [
@@ -273,6 +274,44 @@ const MiscellaneousSection = () => {
           Different perspectives but similar conclusion. I don't claim agency
           just like how i don't think there's necessarily an objective truth.
         </p>
+
+        {/* Stubs stacked as stickers, same shape as the boarding-pass stub on
+            the industry-research note */}
+        <div className="flex flex-col items-start gap-3">
+          <a
+            href="#/dumb-phone-2026"
+            className="group inline-flex items-stretch rounded-lg bg-accent/60 hover:bg-accent transition-colors"
+          >
+            <span className="flex items-center px-4 border-r-2 border-dashed border-primary/30">
+              <Smartphone className="w-5 h-5 text-secondary group-hover:-rotate-6 transition-transform" />
+            </span>
+            <span className="px-4 py-3">
+              <span className="block text-[11px] uppercase tracking-[0.15em] text-primary/60">
+                Experiment
+              </span>
+              <span className="block font-display text-foreground group-hover:text-secondary transition-colors">
+                Five Days on a Dumb Phone &rarr;
+              </span>
+            </span>
+          </a>
+
+          <a
+            href="#/chapel-interpreter"
+            className="group inline-flex items-stretch rounded-lg bg-accent/60 hover:bg-accent transition-colors"
+          >
+            <span className="flex items-center px-4 border-r-2 border-dashed border-primary/30">
+              <Languages className="w-5 h-5 text-secondary group-hover:-rotate-6 transition-transform" />
+            </span>
+            <span className="px-4 py-3">
+              <span className="block text-[11px] uppercase tracking-[0.15em] text-primary/60">
+                Volunteering
+              </span>
+              <span className="block font-display text-foreground group-hover:text-secondary transition-colors">
+                Interpreting at the Class of 1959 Chapel &rarr;
+              </span>
+            </span>
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -1,12 +1,16 @@
 import { useState, useEffect } from 'react'
 import Index from './pages/Index'
 import GoogleReflections from './pages/GoogleReflections'
+import DumbPhone from './pages/DumbPhone'
+import ChapelInterpreter from './pages/ChapelInterpreter'
 import './index.css'
 
 // Minimal hash router: standalone pages live at "#/<slug>", everything else
 // falls through to the main tabbed page (so "#about"/"#research" still work).
 const PAGES = {
   '#/google-2026': GoogleReflections,
+  '#/dumb-phone-2026': DumbPhone,
+  '#/chapel-interpreter': ChapelInterpreter,
 }
 
 function App() {
