@@ -39,11 +39,21 @@ export default {
           '0%, 100%': { transform: 'translate(0px, 0px)' },
           '50%': { transform: 'translate(-14px, -12px)' },
         },
+        // Runs the G-bus down the route and back, turning around during the
+        // dwell at each end. Callers set --gbus-travel to (track - bus) width.
+        'gbus-shuttle': {
+          '0%, 6%': { transform: 'translateX(0) scaleX(1)' },
+          '44%': { transform: 'translateX(var(--gbus-travel)) scaleX(1)' },
+          '50%': { transform: 'translateX(var(--gbus-travel)) scaleX(-1)' },
+          '94%': { transform: 'translateX(0) scaleX(-1)' },
+          '100%': { transform: 'translateX(0) scaleX(1)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
         'sparky-nudge': 'sparky-nudge 1.8s ease-in-out infinite',
+        'gbus-shuttle': 'gbus-shuttle 7s ease-in-out infinite',
       },
     },
   },
