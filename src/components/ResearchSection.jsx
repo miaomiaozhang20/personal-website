@@ -53,7 +53,7 @@ const ResearchSection = () => {
     },
     {
       title: "Who Is a Better Matchmaker? Human vs. Algorithmic Judge Assignment in a High-Stakes Startup Competition",
-      authors: "Xi, Sarina, Orelia Pi, Miaomiao Zhang, Jacqueline N. Lane, Nihar B. Shah",
+      authors: "Sarina Xi, Orelia Pi, Miaomiao Zhang, Jacqueline N. Lane, and Nihar B. Shah",
       venue: (
         <span>
           Accepted at IAAI 2026 Innovative Applications of AI. Available at{" "}
@@ -96,7 +96,7 @@ const ResearchSection = () => {
     },
     {
       title: "Forecasting Impact of Ideas: The Role of Concrete Language in Idea Evaluation",
-      authors: "Orwig, William, Jacqueline N. Lane, Miaomiao Zhang, and Daniel L. Schacter",
+      authors: "William Orwig, Jacqueline N. Lane, Miaomiao Zhang, and Daniel L. Schacter",
       description: "Revise & Resubmit",
       status: "Working Paper",
     },
