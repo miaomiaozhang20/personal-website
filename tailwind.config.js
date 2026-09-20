@@ -41,6 +41,11 @@ export default {
         },
         // Runs the G-bus down the route and back, turning around during the
         // dwell at each end. Callers set --gbus-travel to (track - bus) width.
+        // Idle drift for the theme bubbles — decorative only, no encoding.
+        'bubble-drift': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-7px)' },
+        },
         'gbus-shuttle': {
           '0%, 6%': { transform: 'translateX(0) scaleX(1)' },
           '44%': { transform: 'translateX(var(--gbus-travel)) scaleX(1)' },
@@ -54,6 +59,7 @@ export default {
         'accordion-up': 'accordion-up 0.2s ease-out',
         'sparky-nudge': 'sparky-nudge 1.8s ease-in-out infinite',
         'gbus-shuttle': 'gbus-shuttle 7s ease-in-out infinite',
+        'bubble-drift': 'bubble-drift 6s ease-in-out infinite',
       },
     },
   },
