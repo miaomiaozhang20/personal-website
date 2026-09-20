@@ -270,7 +270,8 @@ const MiscellaneousSection = () => {
           things you don't yet know how they can be "good". One can argue that
           it's through learnings and experiences that the latter category should
           be rephrased to be closer to "I" have the ability to make everything
-          "better" if it doesn't land its best shape at the first place.
+          "better" if it doesn't land its best shape at the first place. I think
+          we are too ignorant to claim objectivity.
         </p>
 
         {/* Stubs stacked as stickers, same shape as the boarding-pass stub on
