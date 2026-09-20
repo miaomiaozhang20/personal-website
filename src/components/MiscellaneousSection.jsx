@@ -30,7 +30,21 @@ const MiscellaneousSection = () => {
     },
     {
       year: "G3",
-      commitment: "Teaching yoga at Mather House as a non-resident tutor, and later at the Shad Gym at HBS",
+      commitment: (
+        <span>
+          Teaching yoga at{" "}
+          <a
+            href="https://mather.harvard.edu/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-secondary hover:underline"
+          >
+            Mather House
+          </a>
+          {" "}as a non-resident tutor, and later (continue as of today) at the
+          HBS Shad Gym
+        </span>
+      ),
     },
     {
       year: "G4",
@@ -59,7 +73,7 @@ const MiscellaneousSection = () => {
     },
     {
       year: "G5",
-      commitment: "First marathon (to-be-realized)",
+      commitment: "First marathon or triathlon (to-be-realized)",
     },
   ];
 
@@ -150,19 +164,17 @@ const MiscellaneousSection = () => {
             </AccordionItem>
           ))}
         </Accordion>
+        <p className="text-text-light italic">&hellip; and a lot more!</p>
       </div>
 
       {/* Divider */}
       <div className="border-t border-primary/20"></div>
 
-      {/* "Parked" Projects Section */}
+      {/* "Parked" Project Section */}
       <div className="space-y-4">
         <h2 className="font-display text-2xl font-semibold text-foreground">
-          &ldquo;Parked&rdquo; Projects
+          &ldquo;Parked&rdquo; Project
         </h2>
-        <p className="text-text-light leading-relaxed italic">
-          Questions I keep circling back to, parked until the right data, coauthor, or moment arrives.
-        </p>
         <div className="space-y-4">
           {parkedProjects.map((project, index) => (
             <div key={index} className="border-l-2 border-primary/30 pl-4 py-2 space-y-1">
@@ -176,9 +188,6 @@ const MiscellaneousSection = () => {
               <p className="text-text-light leading-relaxed">{project.blurb}</p>
             </div>
           ))}
-          <div className="border-l-2 border-primary/30 pl-4 py-2">
-            <p className="text-text-light italic">&hellip; and a lot more!</p>
-          </div>
         </div>
       </div>
 
