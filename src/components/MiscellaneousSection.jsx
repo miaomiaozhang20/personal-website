@@ -271,8 +271,6 @@ const MiscellaneousSection = () => {
           it's through learnings and experiences that the latter category should
           be rephrased to be closer to "I" have the ability to make everything
           "better" if it doesn't land its best shape at the first place.
-          Different perspectives but similar conclusion. I don't claim agency
-          just like how i don't think there's necessarily an objective truth.
         </p>
 
         {/* Stubs stacked as stickers, same shape as the boarding-pass stub on
