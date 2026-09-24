@@ -97,6 +97,12 @@ const ResearchSection = () => {
     {
       title: "Forecasting Impact of Ideas: The Role of Concrete Language in Idea Evaluation",
       authors: "William Orwig, Jacqueline N. Lane, Miaomiao Zhang, and Daniel L. Schacter",
+      description: "Draft available upon request",
+      status: "Working Paper",
+    },
+    {
+      title: "Well, That Didn’t Work: Learning from Failed Field Experiments",
+      authors: "Chiara Spina, Prithwiraj (Raj) Choudhury, Andrea Contigiani, Giada Di Stefano, Stefan Dimitriadis, Jana Gallus, Leonardo Iacovone, Leke Jegede, Dean Karlan, Rem Koning, Jacqueline N. Lane, Michael Leatherbee, David McKenzie, Rafe Meager, Christopher R. Udry, Binglu Wang, Dashun Wang, Melanie Wasserman, Miaomiao Zhang, and Sharique Hasan",
       description: "Revise & Resubmit",
       status: "Working Paper",
     },
