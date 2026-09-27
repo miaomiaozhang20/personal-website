@@ -1,4 +1,14 @@
 /** @type {import('tailwindcss').Config} */
+const BOOK_ANTIQUA = [
+  '"Book Antiqua"',
+  '"Palatino Linotype"',
+  'Palatino',
+  '"URW Palladio L"',
+  '"TeX Gyre Pagella"',
+  'Georgia',
+  'serif',
+]
+
 export default {
   content: [
     "./index.html",
@@ -6,8 +16,14 @@ export default {
   ],
   theme: {
     extend: {
+      // Book Antiqua is a licensed Monotype face that can't be served as a
+      // webfont, so this is a local-first stack: Book Antiqua on Windows,
+      // Palatino on Apple platforms, then the closest free clones, then
+      // Georgia. One stack for headings and body alike.
       fontFamily: {
-        display: ['Georgia', 'serif'],
+        sans: BOOK_ANTIQUA,
+        serif: BOOK_ANTIQUA,
+        display: BOOK_ANTIQUA,
       },
       colors: {
         primary: {
