@@ -203,7 +203,9 @@ const MiscellaneousSection = () => {
           <span className="font-medium italic">教学相长</span> (jiào xué xiāng zhǎng) — "Teaching and learning promote each other."
           This ancient Chinese wisdom captures my belief that the act of teaching deepens one's own understanding.
           When we explain ideas to others, we discover gaps in our knowledge and forge new connections.
-          Teaching is not just a transfer of information; it is a mutual journey of growth.
+          Teaching has never been a transfer of information nor the purpose of education, but creating
+          the incentive to learn how to learn. It&rsquo;s rather a mutual journey of growth among the
+          community members, teachers and students, peers and friends, mentors and colleagues.
         </p>
 
         {/* Course Cards Grid */}
