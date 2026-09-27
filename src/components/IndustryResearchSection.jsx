@@ -85,7 +85,7 @@ const IndustryResearchSection = () => {
             <p className="text-sm font-medium text-text-light">
               Brett Beekley, Aliza Hoffman, and Miaomiao Zhang
             </p>
-            <p className="text-text-light">Full draft available on arXiv soon.</p>
+            <p className="italic text-text-light">Full draft available on arXiv soon.</p>
           </div>
         </div>
       </div>
