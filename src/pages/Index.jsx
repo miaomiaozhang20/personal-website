@@ -4,6 +4,7 @@ import TabNavigation from "@/components/TabNavigation";
 import AboutSection from "@/components/AboutSection";
 import ResearchSection from "@/components/ResearchSection";
 import IndustryResearchSection from "@/components/IndustryResearchSection";
+import PrePhdSection from "@/components/PrePhdSection";
 import AffiliationsSection from "@/components/AffiliationsSection";
 import MiscellaneousSection from "@/components/MiscellaneousSection";
 
@@ -61,6 +62,10 @@ const Index = () => {
 
             <section id="industry" className="scroll-mt-8 mt-8">
               <IndustryResearchSection />
+            </section>
+
+            <section id="pre-phd" className="scroll-mt-8 mt-8">
+              <PrePhdSection />
             </section>
 
             <section id="affiliations" className="scroll-mt-8 mt-8">
