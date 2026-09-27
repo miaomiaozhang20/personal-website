@@ -6,6 +6,22 @@ import {
 } from "@/components/ui/accordion";
 import { Languages, Smartphone } from "lucide-react";
 
+// A cartoon durian: a spiky husk on an ellipse, sized to sit on a line of text.
+const DURIAN_HUSK =
+  "M 12.0 3.5 L 13.3 6.3 L 15.6 4.1 L 15.8 7.1 L 18.7 5.7 L 17.8 8.6 L 21.1 8.2 L 19.1 10.7 L 22.3 11.4 L 19.6 13.0 L 22.3 14.6 L 19.1 15.3 L 21.1 17.8 L 17.8 17.4 L 18.7 20.3 L 15.8 18.9 L 15.6 21.9 L 13.3 19.7 L 12.0 22.5 L 10.7 19.7 L 8.4 21.9 L 8.2 18.9 L 5.3 20.3 L 6.2 17.4 L 2.9 17.8 L 4.9 15.3 L 1.7 14.6 L 4.4 13.0 L 1.7 11.4 L 4.9 10.7 L 2.9 8.3 L 6.2 8.6 L 5.3 5.7 L 8.2 7.1 L 8.4 4.1 L 10.7 6.3 Z";
+
+const Durian = () => (
+  <svg
+    viewBox="0 0 24 26"
+    role="img"
+    aria-label="durian"
+    className="inline-block h-[1.15em] w-[1.15em] align-[-0.2em]"
+  >
+    <path d={DURIAN_HUSK} fill="#7d8c46" stroke="#5c6733" strokeWidth="0.8" strokeLinejoin="round" />
+    <path d="M12 3.5 C 11.6 2.2, 11.4 1.4, 12.9 0.9" fill="none" stroke="#6b5636" strokeWidth="1.4" strokeLinecap="round" />
+  </svg>
+);
+
 const MiscellaneousSection = () => {
   const yearlyCommitments = [
     {
@@ -57,7 +73,7 @@ const MiscellaneousSection = () => {
             rel="noopener noreferrer"
             className="text-secondary hover:underline"
           >
-            Master Xianshu
+            Venerable Master Xianshu
           </a>
           {" "}at the{" "}
           <a
@@ -101,8 +117,29 @@ const MiscellaneousSection = () => {
     {
       title: "From Pilot Plots to Platform Posts: Knowledge Architectures in the Nascent Durian Industry",
       tagline: "Entrepreneurial co-opetition among local government, university scientists, and farmers",
-      blurb:
-        "Hainan, China's southernmost province, is trying to grow a nascent industry for durian \u2014 a tropical, highly-profitable crop that has never been ecologically viable at this latitude. The project traces the co-opetition among entrepreneurs, local government, university agronomists, and smallholder farmers to assemble land, cultivars, capital, and know-how. The macro backdrop is climate adaptation. The entrepreneurial entry decision is made under unknown market potential, climate risk, and no settled view of the optimal \u201ctechnology bundle.\u201d Underneath sit questions of firm boundaries and incomplete contracts, and whether the actors approach market formation as a zero-sum game or as growing the pie.",
+      blurb: (
+        <span>
+          Hainan, China&rsquo;s southernmost province, positions itself for
+          locally-grown durians as the experimentation ground for{" "}
+          <a
+            href="https://www.bbc.com/news/articles/cz7ndzw28v4o"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-secondary hover:underline"
+          >
+            the emergence of the nascent industry
+          </a>
+          . Durian <Durian /> is a tropical,
+          highly-profitable crop that has never been ecologically viable, but
+          climate change has moved the durian latitude upward to mainland China.
+          The project traces the co-opetition among entrepreneurs, orchestration
+          with local government and university agronomists, as well as contract
+          negotiation with smallholder farmers for land, workshop trainings, and
+          tacit know-how. The macro backdrop is climate adaptation. The entrepreneurial
+          entry decision is made under unknown market potential, climate risk,
+          and no settled view of the optimal &ldquo;technology bundle.&rdquo;
+        </span>
+      ),
       status: "Fieldwork notes",
     },
   ];
