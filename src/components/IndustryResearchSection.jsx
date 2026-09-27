@@ -74,6 +74,19 @@ const IndustryResearchSection = () => {
               </span>
             </span>
           </a>
+
+          {/* The project that came out of the internship. The summer and the
+              team are already named above, so this carries only what they
+              don't. */}
+          <div className="border-t border-primary/20 pt-4 space-y-1">
+            <h3 className="font-medium text-foreground">
+              Proactive AI in Team Brainstorming and the Creative Process
+            </h3>
+            <p className="text-sm font-medium text-text-light">
+              Brett Beekley, Aliza Hoffman, and Miaomiao Zhang
+            </p>
+            <p className="text-text-light">Full draft available on arXiv soon.</p>
+          </div>
         </div>
       </div>
     </div>
