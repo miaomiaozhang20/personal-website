@@ -53,11 +53,19 @@ const ResearchSection = () => {
     },
     {
       title: "Who Is a Better Matchmaker? Human vs. Algorithmic Judge Assignment in a High-Stakes Startup Competition",
-      authors: "Sarina Xi, Orelia Pi, Miaomiao Zhang, Jacqueline N. Lane, and Nihar B. Shah",
+      authors: "Sarina Xi, Orelia Pi, Miaomiao Zhang, Rebecca Xiong, Jacqueline N. Lane, and Nihar B. Shah",
       venue: (
         <span>
-          Published in Proceedings of the AAAI Conference on Artificial
-          Intelligence. Available at{" "}
+          Published in{" "}
+          <a
+            href="https://ojs.aaai.org/index.php/AAAI/article/view/41449"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-secondary hover:underline"
+          >
+            Proceedings of the AAAI Conference on Artificial Intelligence
+          </a>
+          . Available at{" "}
           <a
             href="https://arxiv.org/abs/2510.12692"
             target="_blank"
