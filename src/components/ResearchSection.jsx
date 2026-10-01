@@ -56,7 +56,8 @@ const ResearchSection = () => {
       authors: "Sarina Xi, Orelia Pi, Miaomiao Zhang, Jacqueline N. Lane, and Nihar B. Shah",
       venue: (
         <span>
-          Accepted at IAAI 2026 Innovative Applications of AI. Available at{" "}
+          Published in Proceedings of the AAAI Conference on Artificial
+          Intelligence. Available at{" "}
           <a
             href="https://arxiv.org/abs/2510.12692"
             target="_blank"
@@ -68,7 +69,7 @@ const ResearchSection = () => {
         </span>
       ),
       abstract: "There is growing interest in applying artificial intelligence (AI) to automate and support complex decision-making tasks. However, it remains unclear how algorithms compare to human judgment in contexts requiring semantic understanding and domain expertise. We examine this in the context of the judge assignment problem, matching submissions to suitably qualified judges. We developed an AI-based judge-assignment algorithm, Hybrid Lexical-Semantic Similarity Ensemble (HLSE). We evaluated its performance against human expert assignments using blinded match-quality scores from judges on 309 judge-venture pairs. Using a Mann-Whitney U statistic based test, we found no statistically significant difference in assignment quality between the two approaches (AUC=0.48,p=0.40). Furthermore, manual assignments that previously required a full week could be automated in several hours by the algorithm during deployment. These results demonstrate that HLSE achieves human-expert-level matching quality while offering greater scalability and efficiency.",
-      status: "Accepted",
+      status: "Published",
       slides: "https://www.dropbox.com/scl/fi/1ngutszsddsxoqb39xmz6/MiaomiaoZhang_Matchmaker.pdf?rlkey=yo592khk5zsdakmqyagqmh4q3&st=bi26s1u3&dl=0",
       slidePreview: `${import.meta.env.BASE_URL}matchmaker-preview.png`,
       imageScale: 'small',
