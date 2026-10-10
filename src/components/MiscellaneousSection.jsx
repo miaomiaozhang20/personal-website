@@ -98,7 +98,7 @@ const MiscellaneousSection = () => {
       title: "Marketing of Science",
       tagline: "There is a Science of Science, but the marketing of it might just be as important!",
       paragraphs: [
-        "Research has studied the Science of Science extensively: how discoveries get produced, funded, and cited. It has studied the marketing of science far less. I suspect storytelling and narrative are not packaging applied after the fact but a crucial part of the scientific process itself \u2014 shaping what gets framed as a problem, what counts as a \u201cgood\u201d question, and what audience appreciates the type of work innovators dedicate themselves to commit. This also raises the customer question every entrepreneur faces: who are you selling to? Impact is multi-faceted and reaches well beyond scholarly citations, which makes the choice of audience a real strategic decision and sampling matters too.",
+        "Research has studied the Science of Science extensively: how discoveries get produced, funded, and cited. It has studied the marketing of science far less. I suspect storytelling and narrative are not just packaging but a crucial part of the scientific process itself. \u201cSelling\u201d to an audience \u2014 and which audience \u2014 shapes what gets framed as a problem, what counts as a \u201cgood\u201d question, and why it matters. It genuinely helps the researchers and the innovators themselves to decide what to work on. This also relates to the customer question every entrepreneur faces: who are you selling to? Impact is multi-faceted and reaches well beyond scholarly citations, which makes the choice of audience a real strategic decision and sampling matters too.",
       ],
     },
     {
