@@ -33,6 +33,34 @@ const DumbPhone = () => {
 
         <section className="space-y-3">
           <h2 className="font-display text-2xl font-semibold text-foreground">
+            Sustained concentration
+          </h2>
+          <p className="text-lg leading-relaxed text-text-light">
+            I want to train my muscles (like the &ldquo;mind marathon&rdquo;) so
+            I don&rsquo;t lose the energy of{" "}
+            <span className="font-medium text-foreground">定</span> (I believe
+            &ldquo;stillness&rdquo; might be the best translation). Many things
+            compete for our attention and they all seem urgent at the time.
+          </p>
+          <p className="text-lg leading-relaxed text-text-light">
+            I realized that I have started to drift away from the characteristic
+            that I used to value the most — endurance. Long stretches of focused
+            thought (as the{" "}
+            <a
+              href="https://drensin.medium.com/elephants-goldfish-and-the-new-golden-age-of-software-engineering-c33641a48874"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-secondary hover:underline"
+            >
+              elephants-and-goldfish Medium post
+            </a>{" "}
+            also pointed out) are becoming the scarcity in this digital age of
+            AI. Craftsman spirit is becoming my new intellectual pursuit.
+          </p>
+        </section>
+
+        <section className="space-y-3">
+          <h2 className="font-display text-2xl font-semibold text-foreground">
             So much more time
           </h2>
           <p className="text-lg leading-relaxed text-text-light">
