@@ -33,7 +33,7 @@ const AboutSection = () => {
             at the HBS AI Institute.
           </p>
           <p className="text-lg text-text-light">
-            I study how decision makers learn under uncertainty in the earliest stages of innovation process. I design and run field experiments in collaboration with entrepreneurial ecosystem partners. Theoretically, I am interested in the behavioral and cognitive aspects of firms from a problem-solving perspective. Empirically, I identify specific constraints in information processing, technology augmentation, and knowledge diffusion, and test interventions that mitigate these frictions.
+            I study the early stages of the innovation process. I design and run field experiments in collaboration with entrepreneurial ecosystem partners. Theoretically, I am interested in the behavioral and cognitive aspects of firms from a problem-solving perspective. Empirically, I identify specific constraints in information processing, technology augmentation, and knowledge diffusion, and test interventions that mitigate these frictions.
           </p>
           <p className="text-lg text-text-light">
             My research focuses on opportunity identification, and I study it from the ideation and the evaluation angles. I constantly draw inspiration from industry practitioners at frontier AI labs and from research teams at innovation-driven institutions. I collaborate with teams across operations research, computer science, economics, strategy, and psychology to study phenomena that matter for organizations in the digital age of AI and entrepreneurship.
