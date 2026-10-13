@@ -33,10 +33,10 @@ const AboutSection = () => {
             at the HBS AI Institute.
           </p>
           <p className="text-lg text-text-light">
-            I study the early stages of the innovation process. I design and run field experiments in collaboration with entrepreneurial ecosystem partners. Theoretically, I am interested in the behavioral and cognitive aspects of firms from a problem-solving perspective. Empirically, I identify specific constraints in technology, productivity, and knowledge diffusion, and test interventions that mitigate these frictions.
+            I study opportunity identification in the early stages of the innovation process, from both the ideation and the evaluation angles. I design and run field experiments in collaboration with entrepreneurial ecosystem partners. Theoretically, I am interested in the behavioral and cognitive aspects of firms from a problem-solving perspective. Empirically, I identify specific constraints in technology, productivity, and knowledge diffusion, and test interventions that mitigate these frictions.
           </p>
           <p className="text-lg text-text-light">
-            My research focuses on opportunity identification, and I study it from the ideation and the evaluation angles. I constantly draw inspiration from industry practitioners at frontier AI labs and from research teams at innovation-driven institutions. I collaborate with teams across operations research, computer science, economics, strategy, and psychology to study phenomena that matter for organizations in the digital age of AI and entrepreneurship.
+            I constantly draw inspiration from industry practitioners at frontier AI labs and from research teams at innovation-driven institutions. I collaborate with teams across operations research, computer science, economics, strategy, and psychology to study phenomena that matter for organizations in the digital age of AI and entrepreneurship.
           </p>
           <p className="flex items-center text-lg text-foreground font-medium">
             <Mail className="w-5 h-5 mr-2 text-text-light" />
